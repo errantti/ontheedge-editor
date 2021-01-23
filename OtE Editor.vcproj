@@ -1,0 +1,2029 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="OtE Editor"
+	ProjectGUID="{0343F25B-6072-4F23-8DA8-2E253DE33C7D}"
+	RootNamespace="OtE Editor"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="DIRECTINPUT_VERSION=0x900, _EDITOR"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="1"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="odbc32.lib odbccp32.lib winmm.lib dxguid.lib d3d9.lib d3dx9.lib dinput8.lib fmodex_vc.lib comctl32.lib"
+				OutputFile="$(OutDir)/OtE Editor.exe"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				ProgramDatabaseFile="$(OutDir)/OtE Editor.pdb"
+				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;C:\Programming\FMOD SoundSystem\FMOD Programmers API Win32\api\inc&quot;;&quot;C:\Program Files\Microsoft DirectX SDK (November 2008)\Include&quot;"
+				PreprocessorDefinitions="DIRECTINPUT_VERSION=0x900;_EDITOR"
+				RuntimeLibrary="0"
+				UsePrecompiledHeader="0"
+				WarningLevel="2"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="odbc32.lib odbccp32.lib winmm.lib dxguid.lib d3d9.lib d3dx9.lib dinput8.lib fmodex_vc.lib comctl32.lib"
+				OutputFile="$(OutDir)/OtE Editor.exe"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;C:\Programming\FMOD SoundSystem\FMOD Programmers API Win32\api\lib&quot;;&quot;C:\Program Files\Microsoft DirectX SDK (November 2008)\Lib\x86&quot;"
+				IgnoreDefaultLibraryNames=""
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="On the Edge"
+			>
+			<File
+				RelativePath=".\Editor source\OtE\ActionEvent.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\ActionEvent.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\AmmoDatabase.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\AmmoDatabase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\Campaign.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\Campaign.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\Game.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\Game.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\GameSettings.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\GameSettings.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\GameSituation.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\GameSituation.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\Level.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\Level.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\LightEffectManager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\LightEffectManager.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\MultiplayerMode.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\MultiplayerMode.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\OnTheEdge.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\OnTheEdge.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\ParticleEffects.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\ParticleEffects.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\SaveGameManager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\SaveGameManager.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\ScreenshotManager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\ScreenshotManager.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\WayPointSet.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\OtE\WayPointSet.h"
+				>
+			</File>
+			<Filter
+				Name="Gadgets"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\GadgetDatabase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\GadgetDatabase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\HoverGadget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\HoverGadget.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\IGadget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\IGadget.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\KineticGadget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\KineticGadget.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\PossessGadget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\PossessGadget.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\ShieldGadget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\ShieldGadget.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\StealthGadget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\StealthGadget.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\WeaponGadget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Gadgets\WeaponGadget.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Controllers"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\ActivateableDoorLiftController.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\ActivateableDoorLiftController.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\ControllerManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\ControllerManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\EnemyAI.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\EnemyAI.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\FixedRotationController.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\FixedRotationController.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\HoveringController.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\HoveringController.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\Player.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\Player.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\SmoothRotationArcController.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Controllers\SmoothRotationArcController.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Items"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Items\GadgetComponent.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\GadgetComponent.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\IInventoryItem.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\ItemManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\ItemManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\QuestItem.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\QuestItem.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\ShipPatch.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Items\ShipPatch.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="menus"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\menus\AssistantView.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\AssistantView.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\CampaignSelectionMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\CampaignSelectionMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\ControlsMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\ControlsMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\CreditsMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\CreditsMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\DialogueWindow.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\DialogueWindow.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\FlowMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\FlowMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\GadgetHotkeysMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\GadgetHotkeysMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\GeneralControlsMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\GeneralControlsMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\IMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\IMenuHandler.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\IMenuManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\InputSettingsMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\InputSettingsMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\InventoryMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\InventoryMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\InventorySubView.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\InventorySubView.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\LevelSelectionMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\LevelSelectionMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\LoadSaveMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\LoadSaveMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MainMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MainMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuDatabase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuDatabase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuFileParser.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuFileParser.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuStackManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MenuStackManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MouseConfigMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\MouseConfigMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\OptionsMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\OptionsMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\PlayerControlsMenu.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\PlayerControlsMenu.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\TerminalView.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\menus\TerminalView.h"
+					>
+				</File>
+				<Filter
+					Name="Animators"
+					>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\DropdownAnimator.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\DropdownAnimator.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\FadeMenuAnimator.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\FadeMenuAnimator.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\LinearInterpolateAnimator.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\LinearInterpolateAnimator.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\VerticalScaleAnimator.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\menus\Animators\VerticalScaleAnimator.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Objects"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Ammo.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Ammo.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\DynamicObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\DynamicObject.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Enemy.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Enemy.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\FloatingText.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\FloatingText.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\ISimpleObjectControlInterface.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\ObjectManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\ObjectManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\ObjectTypes.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Ship.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Ship.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\StaticObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\StaticObject.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Trigger.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Trigger.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Vessel.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\Vessel.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\VesselShadow.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Objects\VesselShadow.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="OtEScript"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\EnemyInstructions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\EnemyInstructions.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\GadgetInstructions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\GadgetInstructions.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\GameInstructions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\GameInstructions.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\ObjectInstructions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\ObjectInstructions.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\OtEScriptInstructions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\OtEScriptInstructions.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\ScriptManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\ScriptManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\ScriptTimer.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\ScriptTimer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\TimerInstructions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\OtEScript\TimerInstructions.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Screen"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\AssistantMessages.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\AssistantMessages.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\Dialogue.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\Dialogue.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\HealthBar.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\HealthBar.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\ScreenMessages.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\ScreenMessages.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\StatusDisplay.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\StatusDisplay.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\Terminal.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Screen\Terminal.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Sound"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Sound\Sound.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Sound\Sound.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Sound\SoundManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Sound\SoundManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Sound\SoundSettings.h"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="OtE Editor"
+			>
+			<File
+				RelativePath=".\Editor source\Editor.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\Editor.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\EditorUtilities.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\EditorUtilities.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\main.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ObjectFile="$(IntDir)/$(InputName)1.obj"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ObjectFile="$(IntDir)/$(InputName)1.obj"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\Editor source\resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\SelectionMeshSceneNode.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Editor source\SelectionMeshSceneNode.h"
+				>
+			</File>
+			<Filter
+				Name="Tools"
+				>
+				<File
+					RelativePath=".\Editor source\Tools\AssistantMsgDatabase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\AssistantMsgDatabase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\AssistantMsgWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\AssistantMsgWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\CampaignBlockWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\CampaignBlockWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\CampaignEditor.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\CampaignEditor.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\DialogueDatabase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\DialogueDatabase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\DialogueLineWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\DialogueLineWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\DialogueWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\DialogueWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\Get4DVectorWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\Get4DVectorWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetActionEventWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetActionEventWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetColorWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetColorWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetStringWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetStringWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetVectorWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\GetVectorWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\LevelPropertiesWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\LevelPropertiesWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\NewLevelWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\NewLevelWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\ObjectPropertiesWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\ObjectPropertiesWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TerminalCommandWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TerminalCommandWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TerminalDatabase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TerminalDatabase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TerminalWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TerminalWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TriggerWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\TriggerWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\WaypointSetDatabase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Tools\WaypointSetDatabase.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Databases"
+				>
+				<File
+					RelativePath=".\Editor source\Databases\DatabaseSelectionWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\DatabaseSelectionWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\DatabaseUtilities.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\DatabaseUtilities.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\IDatabaseHandler.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\ISelectionList.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\SelectionWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\SelectionWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\TreeDatabaseSelectionWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\TreeDatabaseSelectionWnd.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\TreeSelectionWnd.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\Databases\TreeSelectionWnd.h"
+					>
+				</File>
+				<Filter
+					Name="Handlers"
+					>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\AmmoDatabaseHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\AmmoDatabaseHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ComponentDatabaseHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ComponentDatabaseHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\DynamicObjectDatabase.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\DynamicObjectDatabase.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\EnemyDatabase.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\EnemyDatabase.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\GadgetDatabaseHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\GadgetDatabaseHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\GlobalScriptsHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\GlobalScriptsHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\LightEffectDatabaseHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\LightEffectDatabaseHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ParticleEffectDatabase.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ParticleEffectDatabase.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\QuestItemDatabaseHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\QuestItemDatabaseHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ShipDatabase.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ShipDatabase.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ShipPatchDatabaseHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\ShipPatchDatabaseHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\SoundDatabaseHandler.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\SoundDatabaseHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\StaticObjectDatabase.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\StaticObjectDatabase.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\TileDatabase.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Handlers\TileDatabase.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Windows"
+					>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\AmmoWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\AmmoWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ComponentWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ComponentWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\DynamicObjectWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\DynamicObjectWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\EnemyObjectWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\EnemyObjectWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\GadgetWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\GadgetWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\LightEffectWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\LightEffectWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ParticleEffectWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ParticleEffectWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ParticleEmitterWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ParticleEmitterWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\QuestItemWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\QuestItemWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ScriptWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ScriptWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ShipObjectWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ShipObjectWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ShipPatchWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\ShipPatchWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\SoundWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\SoundWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\StaticObjectWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\StaticObjectWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\TileEditWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\TileEditWnd.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\VesselObjectWnd.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\Databases\Windows\VesselObjectWnd.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+			<File
+				RelativePath=".\Editor source\OtE Editor script.rc"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Edgewalker"
+			>
+			<Filter
+				Name="Core"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Edgewalker.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Edgewalker.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IApplication.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IApplication.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IGameObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IGameObject.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IGameObjectController.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\ILogWriter.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IniFile.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IniFile.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Math.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Math.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\PhysicsEngine.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\PhysicsEngine.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Printer.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Printer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\rect.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\SimpleStaticProfiler.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\SimpleStaticProfiler.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\StandardLogWriter.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Timer.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Timer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Utilities.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Graphics"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\aabbox3d.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\bsphere3d.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\IGeometricObject.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\ResourceManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\ResourceManager.h"
+					>
+				</File>
+				<Filter
+					Name="DirectX9"
+					>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\DirectX9.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\DirectX9.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Font.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Font.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\IDirectXResource.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\IDirectXResource.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\ILight.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\ILight.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Material.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Material.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Mesh.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Mesh.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Texture.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\DirectX9\Texture.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Scene"
+					>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\CameraFollowSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\CameraFollowSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\CameraFPSSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\CameraFPSSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\CameraSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\CameraSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\Frustum.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\Frustum.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\ISceneManager.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\ISceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\LightSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\LightSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\MeshSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\MeshSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\ObjectManagerSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\ObjectManagerSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\SceneManager.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\SceneManager.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\Sector.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\Sector.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\SkyBoxSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\SkyBoxSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\SmoothFollowCamera.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Scene\SmoothFollowCamera.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Terrain"
+					>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\HeighmapTerrain.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\HeighmapTerrain.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\ITerrain.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\ITerrain.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\Tile.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\Tile.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\TiledTerrain.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\TiledTerrain.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\TileManager.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\TileManager.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\TileQuadTreeNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\Terrain\TileQuadTreeNode.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="ParticleSystem"
+					>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\IParticleHandler.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\IParticleInitializer.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\IParticleSystemSceneNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleCache.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleCache.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleEmitter.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleEmitter.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleEngine.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleEngine.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleSystemSceneNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Editor source\OtE\Edgewalker\ParticleSystem\ParticleSystemSceneNode.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Input"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\IInputReceiver.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\IInputReceiver.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputEngine.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputEngine.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputJoystick.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputJoystick.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputJoystickEffect.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputJoystickEffect.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputKeyboard.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputKeyboard.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputMouse.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Input\InputMouse.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Sound"
+				>
+			</Filter>
+			<Filter
+				Name="EWScript"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\BasicScriptInstructions.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\BasicScriptInstructions.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\InstructionTemplate.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\InstructionTemplate.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\Script.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\Script.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\ScriptEngine.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\ScriptEngine.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\ScriptEngineDefines.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\ScriptParser.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\ScriptParser.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\EWScript\Vector3D.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="GUI"
+				>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIButton.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIButton.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUICheckbox.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUICheckbox.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIEnvironment.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIEnvironment.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIImage.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIImage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUILabel.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUILabel.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIScrollbar.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIScrollbar.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIWindow.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\GUIWindow.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\IEventReceiver.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\IExternalGUIWindowRendering.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\IGUIElement.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\IGUIEnvironment.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Editor source\OtE\Edgewalker\Gui\IGUIWindowAnimationSequence.h"
+					>
+				</File>
+			</Filter>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

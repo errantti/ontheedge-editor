@@ -1,0 +1,1383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="On the Edge">
+      <UniqueIdentifier>{710d77d2-2a42-4aa5-b467-2dffeac6bb47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\Gadgets">
+      <UniqueIdentifier>{ec592218-1d02-419d-9824-d2196d7d10b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\Controllers">
+      <UniqueIdentifier>{f705dfdf-8032-4d58-bac5-79739256968e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\Items">
+      <UniqueIdentifier>{dcdd4511-7626-463c-b061-40927d3592a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\menus">
+      <UniqueIdentifier>{260c42ae-089f-4e1c-adaa-03aa375f6df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\menus\Animators">
+      <UniqueIdentifier>{3fd277be-777c-4a4f-ad65-e596f0fd9081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\Objects">
+      <UniqueIdentifier>{f60883ca-7966-4281-bf21-335f23c6e816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\OtEScript">
+      <UniqueIdentifier>{23c3b403-fd4d-4673-8e3a-5a43c84f3a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\Screen">
+      <UniqueIdentifier>{a1afeb98-e0c4-4a2c-a7de-d672fcb57305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="On the Edge\Sound">
+      <UniqueIdentifier>{b89e9772-9a03-42ed-a3e2-3ba657f22500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OtE Editor">
+      <UniqueIdentifier>{95e2678d-ffb6-4198-8dcd-61365e467364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OtE Editor\Tools">
+      <UniqueIdentifier>{4f965c67-243a-445b-9158-bba193165da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OtE Editor\Databases">
+      <UniqueIdentifier>{0e475223-2967-461f-95fc-9e720d1cecde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OtE Editor\Databases\Handlers">
+      <UniqueIdentifier>{81968a7a-329a-4d9d-9341-7a273637f34b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OtE Editor\Databases\Windows">
+      <UniqueIdentifier>{2b8f767b-a3a4-442a-8e07-eb195da864ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Edgewalker">
+      <UniqueIdentifier>{fa33f536-3683-47ce-bce4-7dee4fa30448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Core">
+      <UniqueIdentifier>{684337f9-60de-4d65-a590-02a31dead919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Graphics">
+      <UniqueIdentifier>{f2ad6a73-e60e-4147-8acb-3fd46ef1449f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Graphics\DirectX9">
+      <UniqueIdentifier>{8b0b6ec7-b0ff-4ba3-bb18-b416d4c4064c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Graphics\Scene">
+      <UniqueIdentifier>{8a846479-1764-4c29-ab28-be820082238c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Graphics\Terrain">
+      <UniqueIdentifier>{f3654451-2d5b-4013-9da4-57c6d2512c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Graphics\ParticleSystem">
+      <UniqueIdentifier>{df92f42e-ff89-4493-b693-0e47e361a6cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Input">
+      <UniqueIdentifier>{17028645-4e42-4787-adb3-f270d108ac43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\Sound">
+      <UniqueIdentifier>{13dc2f69-faa5-42c7-ac93-4b10af447b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\EWScript">
+      <UniqueIdentifier>{84187aa2-fcce-4065-a302-c4098523f6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edgewalker\GUI">
+      <UniqueIdentifier>{68fb64a6-656b-4709-bf4c-e472b382a9cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Editor source\OtE\ActionEvent.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\AmmoDatabase.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Campaign.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Game.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\GameSettings.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\GameSituation.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Level.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\LightEffectManager.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\MultiplayerMode.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OnTheEdge.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\ParticleEffects.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\SaveGameManager.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\ScreenshotManager.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\WayPointSet.cpp">
+      <Filter>On the Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\GadgetDatabase.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\HoverGadget.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\IGadget.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\KineticGadget.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\PossessGadget.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\ShieldGadget.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\StealthGadget.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Gadgets\WeaponGadget.cpp">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Controllers\ActivateableDoorLiftController.cpp">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Controllers\ControllerManager.cpp">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Controllers\EnemyAI.cpp">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Controllers\FixedRotationController.cpp">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Controllers\HoveringController.cpp">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Controllers\Player.cpp">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Controllers\SmoothRotationArcController.cpp">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Items\GadgetComponent.cpp">
+      <Filter>On the Edge\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Items\ItemManager.cpp">
+      <Filter>On the Edge\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Items\QuestItem.cpp">
+      <Filter>On the Edge\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Items\ShipPatch.cpp">
+      <Filter>On the Edge\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\AssistantView.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\CampaignSelectionMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\ControlsMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\CreditsMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\DialogueWindow.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\FlowMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\GadgetHotkeysMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\GeneralControlsMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\IMenuHandler.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\InputSettingsMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\InventoryMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\InventorySubView.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\LevelSelectionMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\LoadSaveMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\MainMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\MenuDatabase.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\MenuFileParser.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\MenuManager.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\MenuStackManager.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\MouseConfigMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\OptionsMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\PlayerControlsMenu.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\TerminalView.cpp">
+      <Filter>On the Edge\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\Animators\DropdownAnimator.cpp">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\Animators\FadeMenuAnimator.cpp">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\Animators\LinearInterpolateAnimator.cpp">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\menus\Animators\VerticalScaleAnimator.cpp">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\Ammo.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\DynamicObject.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\Enemy.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\FloatingText.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\ObjectManager.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\Ship.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\StaticObject.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\Trigger.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\Vessel.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Objects\VesselShadow.cpp">
+      <Filter>On the Edge\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\EnemyInstructions.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\GadgetInstructions.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\GameInstructions.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\ObjectInstructions.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\OtEScriptInstructions.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\ScriptManager.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\ScriptTimer.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\OtEScript\TimerInstructions.cpp">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Screen\AssistantMessages.cpp">
+      <Filter>On the Edge\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Screen\Dialogue.cpp">
+      <Filter>On the Edge\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Screen\HealthBar.cpp">
+      <Filter>On the Edge\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Screen\ScreenMessages.cpp">
+      <Filter>On the Edge\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Screen\StatusDisplay.cpp">
+      <Filter>On the Edge\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Screen\Terminal.cpp">
+      <Filter>On the Edge\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Sound\Sound.cpp">
+      <Filter>On the Edge\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Sound\SoundManager.cpp">
+      <Filter>On the Edge\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Editor.cpp">
+      <Filter>OtE Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\EditorUtilities.cpp">
+      <Filter>OtE Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\main.cpp">
+      <Filter>OtE Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\SelectionMeshSceneNode.cpp">
+      <Filter>OtE Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\AssistantMsgDatabase.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\AssistantMsgWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\CampaignBlockWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\CampaignEditor.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\DialogueDatabase.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\DialogueLineWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\DialogueWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\Get4DVectorWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\GetActionEventWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\GetColorWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\GetStringWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\GetVectorWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\LevelPropertiesWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\NewLevelWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\ObjectPropertiesWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\TerminalCommandWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\TerminalDatabase.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\TerminalWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\TriggerWnd.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Tools\WaypointSetDatabase.cpp">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\DatabaseSelectionWnd.cpp">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\DatabaseUtilities.cpp">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\SelectionWnd.cpp">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\TreeDatabaseSelectionWnd.cpp">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\TreeSelectionWnd.cpp">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\AmmoDatabaseHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\ComponentDatabaseHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\DynamicObjectDatabase.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\EnemyDatabase.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\GadgetDatabaseHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\GlobalScriptsHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\LightEffectDatabaseHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\ParticleEffectDatabase.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\QuestItemDatabaseHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\ShipDatabase.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\ShipPatchDatabaseHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\SoundDatabaseHandler.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\StaticObjectDatabase.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Handlers\TileDatabase.cpp">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\AmmoWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\ComponentWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\DynamicObjectWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\EnemyObjectWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\GadgetWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\LightEffectWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\ParticleEffectWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\ParticleEmitterWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\QuestItemWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\ScriptWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\ShipObjectWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\ShipPatchWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\SoundWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\StaticObjectWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\TileEditWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\Databases\Windows\VesselObjectWnd.cpp">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Edgewalker.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\IApplication.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\IGameObject.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\IniFile.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Math.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\PhysicsEngine.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Printer.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\SimpleStaticProfiler.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Timer.cpp">
+      <Filter>Edgewalker\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\ResourceManager.cpp">
+      <Filter>Edgewalker\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\DirectX9\DirectX9.cpp">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\DirectX9\Font.cpp">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\DirectX9\IDirectXResource.cpp">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\DirectX9\ILight.cpp">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\DirectX9\Material.cpp">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\DirectX9\Mesh.cpp">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\DirectX9\Texture.cpp">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\CameraFollowSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\CameraFPSSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\CameraSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\Frustum.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\LightSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\MeshSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\ObjectManagerSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\SceneManager.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\Sector.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\SkyBoxSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Scene\SmoothFollowCamera.cpp">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Terrain\HeighmapTerrain.cpp">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Terrain\ITerrain.cpp">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Terrain\Tile.cpp">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Terrain\TiledTerrain.cpp">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Terrain\TileManager.cpp">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Terrain\TileQuadTreeNode.cpp">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleCache.cpp">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleEmitter.cpp">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleEngine.cpp">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleSystemSceneNode.cpp">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Input\IInputReceiver.cpp">
+      <Filter>Edgewalker\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Input\InputEngine.cpp">
+      <Filter>Edgewalker\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Input\InputJoystick.cpp">
+      <Filter>Edgewalker\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Input\InputJoystickEffect.cpp">
+      <Filter>Edgewalker\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Input\InputKeyboard.cpp">
+      <Filter>Edgewalker\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Input\InputMouse.cpp">
+      <Filter>Edgewalker\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\EWScript\BasicScriptInstructions.cpp">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\EWScript\InstructionTemplate.cpp">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\EWScript\Script.cpp">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\EWScript\ScriptEngine.cpp">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\EWScript\ScriptParser.cpp">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Gui\GUIButton.cpp">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Gui\GUICheckbox.cpp">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Gui\GUIEnvironment.cpp">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Gui\GUIImage.cpp">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Gui\GUILabel.cpp">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Gui\GUIScrollbar.cpp">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor source\OtE\Edgewalker\Gui\GUIWindow.cpp">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Editor source\OtE\ActionEvent.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\AmmoDatabase.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Campaign.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Game.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\GameSettings.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\GameSituation.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Level.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\LightEffectManager.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\MultiplayerMode.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OnTheEdge.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\ParticleEffects.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\SaveGameManager.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\ScreenshotManager.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\WayPointSet.h">
+      <Filter>On the Edge</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\GadgetDatabase.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\HoverGadget.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\IGadget.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\KineticGadget.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\PossessGadget.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\ShieldGadget.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\StealthGadget.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Gadgets\WeaponGadget.h">
+      <Filter>On the Edge\Gadgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Controllers\ActivateableDoorLiftController.h">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Controllers\ControllerManager.h">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Controllers\EnemyAI.h">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Controllers\FixedRotationController.h">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Controllers\HoveringController.h">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Controllers\Player.h">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Controllers\SmoothRotationArcController.h">
+      <Filter>On the Edge\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Items\GadgetComponent.h">
+      <Filter>On the Edge\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Items\IInventoryItem.h">
+      <Filter>On the Edge\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Items\ItemManager.h">
+      <Filter>On the Edge\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Items\QuestItem.h">
+      <Filter>On the Edge\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Items\ShipPatch.h">
+      <Filter>On the Edge\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\AssistantView.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\CampaignSelectionMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\ControlsMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\CreditsMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\DialogueWindow.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\FlowMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\GadgetHotkeysMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\GeneralControlsMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\IMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\IMenuManager.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\InputSettingsMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\InventoryMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\InventorySubView.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\LevelSelectionMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\LoadSaveMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\MainMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\MenuDatabase.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\MenuFileParser.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\MenuManager.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\MenuStackManager.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\MouseConfigMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\OptionsMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\PlayerControlsMenu.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\TerminalView.h">
+      <Filter>On the Edge\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\Animators\DropdownAnimator.h">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\Animators\FadeMenuAnimator.h">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\Animators\LinearInterpolateAnimator.h">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\menus\Animators\VerticalScaleAnimator.h">
+      <Filter>On the Edge\menus\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\Ammo.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\DynamicObject.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\Enemy.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\FloatingText.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\ISimpleObjectControlInterface.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\ObjectManager.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\ObjectTypes.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\Ship.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\StaticObject.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\Trigger.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\Vessel.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Objects\VesselShadow.h">
+      <Filter>On the Edge\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\EnemyInstructions.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\GadgetInstructions.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\GameInstructions.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\ObjectInstructions.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\OtEScriptInstructions.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\ScriptManager.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\ScriptTimer.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\OtEScript\TimerInstructions.h">
+      <Filter>On the Edge\OtEScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Screen\AssistantMessages.h">
+      <Filter>On the Edge\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Screen\Dialogue.h">
+      <Filter>On the Edge\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Screen\HealthBar.h">
+      <Filter>On the Edge\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Screen\ScreenMessages.h">
+      <Filter>On the Edge\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Screen\StatusDisplay.h">
+      <Filter>On the Edge\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Screen\Terminal.h">
+      <Filter>On the Edge\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Sound\Sound.h">
+      <Filter>On the Edge\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Sound\SoundManager.h">
+      <Filter>On the Edge\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Sound\SoundSettings.h">
+      <Filter>On the Edge\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Editor.h">
+      <Filter>OtE Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\EditorUtilities.h">
+      <Filter>OtE Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\resource.h">
+      <Filter>OtE Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\SelectionMeshSceneNode.h">
+      <Filter>OtE Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\AssistantMsgDatabase.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\AssistantMsgWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\CampaignBlockWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\CampaignEditor.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\DialogueDatabase.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\DialogueLineWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\DialogueWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\Get4DVectorWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\GetActionEventWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\GetColorWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\GetStringWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\GetVectorWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\LevelPropertiesWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\NewLevelWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\ObjectPropertiesWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\TerminalCommandWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\TerminalDatabase.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\TerminalWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\TriggerWnd.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Tools\WaypointSetDatabase.h">
+      <Filter>OtE Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\DatabaseSelectionWnd.h">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\DatabaseUtilities.h">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\IDatabaseHandler.h">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\ISelectionList.h">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\SelectionWnd.h">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\TreeDatabaseSelectionWnd.h">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\TreeSelectionWnd.h">
+      <Filter>OtE Editor\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\AmmoDatabaseHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\ComponentDatabaseHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\DynamicObjectDatabase.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\EnemyDatabase.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\GadgetDatabaseHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\GlobalScriptsHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\LightEffectDatabaseHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\ParticleEffectDatabase.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\QuestItemDatabaseHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\ShipDatabase.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\ShipPatchDatabaseHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\SoundDatabaseHandler.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\StaticObjectDatabase.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Handlers\TileDatabase.h">
+      <Filter>OtE Editor\Databases\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\AmmoWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\ComponentWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\DynamicObjectWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\EnemyObjectWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\GadgetWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\LightEffectWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\ParticleEffectWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\ParticleEmitterWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\QuestItemWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\ScriptWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\ShipObjectWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\ShipPatchWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\SoundWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\StaticObjectWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\TileEditWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\Databases\Windows\VesselObjectWnd.h">
+      <Filter>OtE Editor\Databases\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Edgewalker.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\IApplication.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\IGameObject.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\IGameObjectController.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ILogWriter.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\IniFile.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Math.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\PhysicsEngine.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Printer.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\rect.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\SimpleStaticProfiler.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\StandardLogWriter.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Timer.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Utilities.h">
+      <Filter>Edgewalker\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\aabbox3d.h">
+      <Filter>Edgewalker\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\bsphere3d.h">
+      <Filter>Edgewalker\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\IGeometricObject.h">
+      <Filter>Edgewalker\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ResourceManager.h">
+      <Filter>Edgewalker\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\DirectX9\DirectX9.h">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\DirectX9\Font.h">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\DirectX9\IDirectXResource.h">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\DirectX9\ILight.h">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\DirectX9\Material.h">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\DirectX9\Mesh.h">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\DirectX9\Texture.h">
+      <Filter>Edgewalker\Graphics\DirectX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\CameraFollowSceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\CameraFPSSceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\CameraSceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\Frustum.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\ISceneManager.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\ISceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\LightSceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\MeshSceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\ObjectManagerSceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\SceneManager.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\Sector.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\SkyBoxSceneNode.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Scene\SmoothFollowCamera.h">
+      <Filter>Edgewalker\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Terrain\HeighmapTerrain.h">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Terrain\ITerrain.h">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Terrain\Tile.h">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Terrain\TiledTerrain.h">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Terrain\TileManager.h">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Terrain\TileQuadTreeNode.h">
+      <Filter>Edgewalker\Graphics\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ParticleSystem\IParticleHandler.h">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ParticleSystem\IParticleInitializer.h">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ParticleSystem\IParticleSystemSceneNode.h">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleCache.h">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleEmitter.h">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleEngine.h">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\ParticleSystem\ParticleSystemSceneNode.h">
+      <Filter>Edgewalker\Graphics\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Input\IInputReceiver.h">
+      <Filter>Edgewalker\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Input\InputEngine.h">
+      <Filter>Edgewalker\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Input\InputJoystick.h">
+      <Filter>Edgewalker\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Input\InputJoystickEffect.h">
+      <Filter>Edgewalker\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Input\InputKeyboard.h">
+      <Filter>Edgewalker\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Input\InputMouse.h">
+      <Filter>Edgewalker\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\EWScript\BasicScriptInstructions.h">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\EWScript\InstructionTemplate.h">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\EWScript\Script.h">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\EWScript\ScriptEngine.h">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\EWScript\ScriptEngineDefines.h">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\EWScript\ScriptParser.h">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\EWScript\Vector3D.h">
+      <Filter>Edgewalker\EWScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\GUIButton.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\GUICheckbox.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\GUIEnvironment.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\GUIImage.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\GUILabel.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\GUIScrollbar.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\GUIWindow.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\IEventReceiver.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\IExternalGUIWindowRendering.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\IGUIElement.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\IGUIEnvironment.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor source\OtE\Edgewalker\Gui\IGUIWindowAnimationSequence.h">
+      <Filter>Edgewalker\GUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Editor source\OtE Editor script.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

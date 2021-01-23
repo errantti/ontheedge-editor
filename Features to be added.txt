@@ -1,0 +1,16 @@
+
+	On the Edge editor v 0.9
+
+Features to be added:
+
+High priority:
+
+Low priority:
+-popping a question box when exiting if the level hasn't been saved
+-bug: when first inserting object it doesn't do it. works on second try
+-multiline for dialogue comments and campaign texts
+-making a copy of a template
+-making select ray more accurate
+-better error checking when loading game data
+-sound database and sound effect options to objects
+-bolted and kill on dynamic collision -options to enemy AI

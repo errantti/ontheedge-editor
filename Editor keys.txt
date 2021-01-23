@@ -1,0 +1,32 @@
+On the Edge level / database editor keys:
+
+O - elevate selected tile
+L - lower selected tile
+I - rotate selected tile 90 degrees clockwise
+Del - delete selected object
+
+T - open tile selection window
+M - switch between fly/edit modes
+N - switch between tile/object mode
+Q - enable/disable autotrim
+
+R - open object properties
+G - open static object selection window
+
+Backspace - delete the last waypoint of the currently active waypoint set
+
+W,A,S,D - move in fly or edit mode
+Mouse left - hold down and move mouse to move around in edit mode or turn around in fly mode
+F - restore camera to default position in fly mode
+H - rotate isometric camera 90 degrees
+
+1 - select empty tile
+2 - select platform tile
+3 - select current / last used tile
+4 - select the tile used before last one
+
+Space - exit "Add object/tile/trigger" mode or finish a waypoit set
+
+Left Ctrl - hold down and drag mouse to rotate selected object or lower tile
+Left Shift - hold down and drag mouse to move selected object or elevate tile
+Right Shift - hold down and drag static object to move it up or down

@@ -1,0 +1,1945 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Finnish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FIN)
+#ifdef _WIN32
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_EDITOR_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&File",                       ID__FILE
+    END
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_FILE_NEW_LEVEL
+        MENUITEM "&Open",                       ID_FILE_OPEN_LEVEL
+        MENUITEM "&Save",                       ID_FILE_SAVE_LEVEL
+        MENUITEM "Save &as",                    ID_FILE_SAVEAS
+        MENUITEM "&Close",                      ID_FILE_CLOSE_LEVEL
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit",                       ID_FILE_QUIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Level &properties",           ID_EDIT_LEVELPROPERTIES
+        MENUITEM "Level scripts",               ID_EDIT_LEVELSCRIPTS
+        MENUITEM SEPARATOR
+        MENUITEM "Dialogues",                   ID_EDIT_DIALOGUES
+        MENUITEM "Assistant messages",          ID_EDIT_ASSISTANTMESSAGES
+        MENUITEM "Terminals",                   ID_EDIT_TERMINALS
+        MENUITEM SEPARATOR
+        MENUITEM "Tile edit mode - N",          ID_EDIT_TILEEDITMODE
+        , CHECKED
+        MENUITEM "&Select tile - T",            ID_EDIT_SELECTTILE
+        MENUITEM "Autotrim - Q",                ID_EDIT_AUTOTRIM, CHECKED
+        MENUITEM "Randomize autotrim",          ID_EDIT_RANDOMIZEAUTOTRIM
+        MENUITEM "Rapid tile elevation",        ID_EDIT_RAPIDTILEELEVATION
+        MENUITEM "Reset camera position - F",   ID_EDIT_RESETCAMERAPOSITION
+        MENUITEM SEPARATOR
+        MENUITEM "Object properties - R",       ID_EDIT_OBJECTPROPERTIES
+        MENUITEM "Repair object positions",     ID_EDIT_REPAIR
+        MENUITEM "Delete object",               ID_EDIT_DELETEOBJECT
+        MENUITEM "Delete all object",           ID_DELETE_ALL_OBJECTS
+        MENUITEM SEPARATOR
+        MENUITEM "Edit waypoint sets",          ID_EDIT_WAYPOINTS
+        MENUITEM "Show triggers",               ID_EDIT_SHOWTRIGGERS
+        , CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Campaign editor",             ID_EDIT_CAMPAIGN_EDITOR
+    END
+    POPUP "&Insert"
+    BEGIN
+        MENUITEM "&Enemy - E",                  ID_INSERT_ENEMY
+        MENUITEM "&Dynamic object",             ID_INSERT_DYNAMICOBJECT
+        MENUITEM "Static &object - G",          ID_INSERT_STATICOBJECT
+        MENUITEM SEPARATOR
+        MENUITEM "Player",                      ID_INSERT_PLAYER1
+        MENUITEM "&Trigger",                    ID_INSERT_TRIGGER
+        MENUITEM "&Waypoint set",               ID_INSERT_WAYPOINTSET
+    END
+    POPUP "&Database"
+    BEGIN
+        MENUITEM "&Ships",                      ID_DATABASE_SHIPS
+        MENUITEM "&Enemies",                    ID_DATABASE_ENEMIES
+        MENUITEM "&Dynamic objects",            ID_DATABASE_DYNAMICOBJECTS
+        MENUITEM "Static &objects",             ID_DATABASE_STATICOBJECTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Gadgets",                    ID_DATABASE_GADGETS
+        MENUITEM "Ship patches",                ID_DATABASE_SHIPPATCHES
+        MENUITEM "Components",                  ID_DATABASE_COMPONENTS
+        MENUITEM "Quest items",                 ID_DATABASE_QUESTITEMS
+        MENUITEM SEPARATOR
+        MENUITEM "Particle effects",            ID_DATABASE_EFFECTS
+        MENUITEM "Light effects",               ID_DATABASE_LIGHTEFFECTS
+        MENUITEM "Ammos",                       ID_DATABASE_AMMOS
+        MENUITEM "Global scripts",              ID_DATABASE_GLOBALSCRIPTS
+        MENUITEM "Sounds",                      ID_DATABASE_SOUNDS
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit tileset",               ID_DATABASE_TILESET
+        MENUITEM "Create tileset",              ID_DATABASE_CREATETILESET
+    END
+    MENUITEM "About",                       ID_ABOUT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEWLEVEL DIALOGEX 0, 0, 150, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New level"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_NEWLEVEL_OK,93,61,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",ID_NEWLEVEL_CANCEL,7,61,50,14
+    LTEXT           "Select level size",IDC_STATIC,7,4,54,10
+    LTEXT           "X: ",IDC_STATIC,7,16,11,8
+    LTEXT           "Z:",IDC_STATIC,7,32,9,10
+    EDITTEXT        IDC_SIZEX,19,15,41,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SIZEY,19,31,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Default tile height",IDC_STATIC,85,4,58,10
+    EDITTEXT        IDC_NEWLEVEL_HEIGHT,102,15,41,13,ES_AUTOHSCROLL
+    LTEXT           "Tileset",IDC_STATIC,7,48,23,8
+    EDITTEXT        IDC_NEWLEVEL_TILESET,33,47,110,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "Browse",ID_NEWLEVEL_BROWSE,93,33,50,14
+END
+
+IDD_SELECTION DIALOGEX 0, 0, 189, 236
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Select",ID_SELECTION_SELECT,142,215,40,14
+    PUSHBUTTON      "Cancel",ID_SELECTION_CANCEL,7,215,41,14
+    LISTBOX         IDC_SELECTION_LIST,7,7,175,187,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save",ID_SELECTION_SAVE,54,215,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Add",ID_SELECTION_ADD,98,215,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Import",ID_SELECTION_IMPORT,54,197,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Export",ID_SELECTION_EXPORT,98,197,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Clone",ID_SELECTION_CLONE,142,197,40,14,NOT WS_VISIBLE
+END
+
+IDD_LEVEL_PROPERTIES DIALOGEX 0, 0, 407, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Level properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_LP_OK,350,209,50,14
+    PUSHBUTTON      "Cancel",ID_LP_CANCEL,7,209,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,24,8
+    EDITTEXT        IDC_LP_NAME,45,7,99,12,ES_AUTOHSCROLL
+    LTEXT           "Description",IDC_STATIC,7,20,36,9
+    EDITTEXT        IDC_LP_DESCRIPTION,45,22,99,80,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN
+    CONTROL         "Single player level",IDC_LP_SINGLE_PLAYER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,13,122,11
+    LTEXT           "Energy pod regeneration",IDC_STATIC,151,29,81,10
+    EDITTEXT        IDC_LP_ENERGYPOD,235,28,51,12,ES_AUTOHSCROLL
+    LTEXT           "Repair pod regeneration",IDC_STATIC,151,42,81,10
+    EDITTEXT        IDC_LP_REPAIRPOD,235,42,51,12,ES_AUTOHSCROLL
+    GROUPBOX        "Physics",IDC_STATIC,160,60,117,70
+    LTEXT           "Gravity",IDC_STATIC,168,75,29,10
+    EDITTEXT        IDC_LP_GRAVITY,204,74,51,12,ES_AUTOHSCROLL
+    LTEXT           "Density",IDC_STATIC,168,90,29,10
+    EDITTEXT        IDC_LP_DENSITY,204,89,51,12,ES_AUTOHSCROLL
+    LTEXT           "Friction",IDC_STATIC,168,107,29,10
+    EDITTEXT        IDC_LP_FRICTION,204,106,51,12,ES_AUTOHSCROLL
+    SCROLLBAR       IDC_LP_X_DIR,45,108,100,10
+    SCROLLBAR       IDC_LP_Z_DIR,45,122,100,10
+    LTEXT           "Light direction",IDC_STATIC,14,90,29,18
+    LTEXT           "X",IDC_STATIC,31,110,8,9
+    LTEXT           "Z",IDC_STATIC,31,122,8,9
+    PUSHBUTTON      "Set light color",ID_LP_SET_COLOR,45,136,56,14
+    GROUPBOX        "Skybox textures",IDC_STATIC,7,153,283,54
+    LTEXT           "Top",IDC_STATIC,11,164,21,9
+    EDITTEXT        IDC_LP_EDIT_TOP,35,162,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_LP_CMD_TOP,117,162,29,12
+    LTEXT           "Left",IDC_STATIC,11,177,21,9
+    EDITTEXT        IDC_LP_EDIT_LEFT,35,177,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_LP_CMD_LEFT,117,177,29,12
+    LTEXT           "Front",IDC_STATIC,11,193,21,9
+    EDITTEXT        IDC_LP_EDIT_FRONT,35,191,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_LP_CMD_FRONT,117,191,29,12
+    LTEXT           "Bottom",IDC_STATIC,152,164,21,9
+    EDITTEXT        IDC_LP_EDIT_BOTTOM,176,162,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_LP_CMD_BOTTOM,257,162,29,12
+    LTEXT           "Right",IDC_STATIC,152,177,21,9
+    EDITTEXT        IDC_LP_EDIT_RIGHT,176,177,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_LP_CMD_RIGHT,257,177,29,12
+    LTEXT           "Back",IDC_STATIC,152,193,21,9
+    EDITTEXT        IDC_LP_EDIT_BACK,176,191,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_LP_CMD_BACK,257,191,29,12
+    PUSHBUTTON      "Set ambient light",ID_LP_SET_AMBIENT_COLOR,107,136,57,
+                    14
+    GROUPBOX        "Music",IDC_STATIC,293,7,107,116
+    LTEXT           "Default music 1",IDC_STATIC,299,17,52,8
+    EDITTEXT        IDC_LP_MUSIC1,299,28,93,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_LP_BROWSEMUSIC1,358,15,34,12
+    LTEXT           "Default music 2",IDC_STATIC,299,44,51,8
+    EDITTEXT        IDC_LP_MUSIC2,299,55,93,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_LP_BROWSEMUSIC2,358,42,34,12
+    LTEXT           "Boss theme / 3",IDC_STATIC,299,73,54,8
+    EDITTEXT        IDC_LP_MUSIC3,299,84,93,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_LP_BROWSEMUSIC3,358,70,34,12
+    CONTROL         "Autoplay boss theme",IDC_LP_AUTOPLAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,299,100,88,8
+    CONTROL         "Loop music",IDC_LP_LOOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,299,111,87,8
+    GROUPBOX        "Camera",IDC_STATIC,293,124,107,83
+    CONTROL         "Fixed follow",IDC_LP_CAMERA_TYPE1,"Button",
+                    BS_AUTORADIOBUTTON,299,134,83,8
+    CONTROL         "Free follow",IDC_LP_CAMERA_TYPE2,"Button",
+                    BS_AUTORADIOBUTTON,299,143,83,8
+    CONTROL         "Follow behind",IDC_LP_CAMERA_TYPE3,"Button",
+                    BS_AUTORADIOBUTTON,299,151,83,8
+    CONTROL         "First person",IDC_LP_CAMERA_TYPE4,"Button",
+                    BS_AUTORADIOBUTTON,299,160,83,8
+    CONTROL         "FPS-style",IDC_LP_CAMERA_TYPE5,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,299,169,83,8
+    PUSHBUTTON      "Set camera param",IDC_LP_SET_CAMERA_PARAM,302,180,78,12
+    CONTROL         "Force level camera",IDC_LP_FORCE_CAMERA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,302,196,90,8
+END
+
+IDD_DYNAMIC_OBJECT DIALOGEX 0, 0, 268, 227
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dynamic object properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_DO_OK,211,206,50,14
+    PUSHBUTTON      "Cancel",ID_DO_CANCEL,7,206,50,14
+    LTEXT           "Name:",IDC_STATIC,17,7,26,10
+    EDITTEXT        IDC_DO_NAME,45,7,125,12,ES_AUTOHSCROLL
+    LTEXT           "Mesh:",IDC_STATIC,17,22,22,10
+    EDITTEXT        IDC_DO_MESH,45,22,126,13,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_DO_BROWSE_MESH,177,23,36,13
+    LTEXT           "Hit points",IDC_STATIC,7,103,30,10
+    EDITTEXT        IDC_DO_HITPOINTS,45,100,44,12,ES_AUTOHSCROLL
+    LTEXT           "Bounding volume coefficient",IDC_STATIC,99,102,93,10
+    EDITTEXT        IDC_DO_BCCOEFFICIENT,195,100,32,12,ES_AUTOHSCROLL
+    LTEXT           "Mass",IDC_STATIC,20,116,19,10
+    EDITTEXT        IDC_DO_MASS,45,116,44,12,ES_AUTOHSCROLL
+    LTEXT           "Drag coefficient",IDC_STATIC,15,148,51,10
+    EDITTEXT        IDC_DO_DRAGCOEFFICIENT,71,146,32,12,ES_AUTOHSCROLL
+    GROUPBOX        "Physics",IDC_STATIC,7,135,254,52
+    CONTROL         "Indestructible",IDC_DO_INDESTRUCTIBLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,193,58,8
+    CONTROL         "Affected by Gravity",IDC_DO_GRAVITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,161,84,8
+    CONTROL         "Affected by Drag",IDC_DO_DRAG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,172,73,8
+    CONTROL         "Collides with objects",IDC_DO_COBJECTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,118,148,105,8
+    CONTROL         "Collides with external objects",IDC_DO_CEXTERNAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,118,159,105,8
+    CONTROL         "Requires collision determination",IDC_DO_REQUIRESC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,172,125,8
+    PUSHBUTTON      "Remove",IDC_DO_REMOVE_MESH,219,23,36,13
+    EDITTEXT        IDC_DO_ID,213,7,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ID:",IDC_STATIC,199,9,11,12
+    CONTROL         "Drop when loaded",IDC_DO_DROPWHENLOADED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,83,193,71,8
+    LTEXT           "Subcategory:",IDC_STATIC,7,39,43,10
+    EDITTEXT        IDC_DO_SUBCATEGORY,51,39,91,12,ES_AUTOHSCROLL
+    LTEXT           "Default particle effect ID",IDC_STATIC,113,118,79,10
+    EDITTEXT        IDC_DO_DEFAULTPEFFECT,195,116,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_DO_BROWSE_DEFAULTPEFFECT,228,116,33,13
+    LTEXT           "Collision param",IDC_STATIC,147,36,29,17
+    EDITTEXT        IDC_DO_COLLISIONPARAM,179,39,82,12,ES_AUTOHSCROLL
+    GROUPBOX        "Collision type",IDC_STATIC,178,54,83,44
+    CONTROL         "Default (spherical)",IDC_DO_COLLISION_SPHERE,"Button",
+                    BS_AUTORADIOBUTTON,185,65,71,9
+    CONTROL         "Cylinder",IDC_DO_COLLISION_CYLINDER,"Button",
+                    BS_AUTORADIOBUTTON,185,75,69,9
+    CONTROL         "Box",IDC_DO_COLLISION_BOX,"Button",BS_AUTORADIOBUTTON,
+                    185,85,69,9
+    GROUPBOX        "Event actions",IDC_STATIC,7,54,165,44
+    PUSHBUTTON      "On death",IDC_DO_EA_DEATH,15,65,67,13
+    PUSHBUTTON      "On collision",IDC_DO_EA_COLLISION,15,82,67,13
+    PUSHBUTTON      "On damage taken",IDC_DO_EA_DAMAGE,94,65,67,13
+    PUSHBUTTON      "Set default effect pos",IDC_DO_DEFAULT_EFFECT_POS,175,
+                    190,78,12
+END
+
+IDD_TILE DIALOGEX 0, 0, 247, 219
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tile properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_TILE_OK,190,198,50,14
+    PUSHBUTTON      "Cancel",ID_TILE_CANCEL,7,198,50,14
+    LTEXT           "Name:",IDC_STATIC,7,7,26,10
+    EDITTEXT        IDC_TILE_NAME,40,7,118,12,ES_AUTOHSCROLL
+    LTEXT           "Mesh:",IDC_STATIC,7,22,22,10
+    EDITTEXT        IDC_TILE_MESH,40,23,119,13,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_TILE_BROWSE_MESH,51,38,36,13
+    PUSHBUTTON      "Remove",IDC_TILE_REMOVE_MESH,92,38,36,13
+    GROUPBOX        "Collision type",IDC_STATIC,7,132,72,64
+    CONTROL         "Bounding Box",IDC_TILE_BB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,143,62,9
+    CONTROL         "Ramp",IDC_TILE_RAMP,"Button",BS_AUTORADIOBUTTON,13,154,
+                    61,9
+    CONTROL         "None",IDC_TILE_NONE,"Button",BS_AUTORADIOBUTTON,13,164,
+                    62,9
+    CONTROL         "Accurate",IDC_TILE_ACCURATE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,13,185,62,9
+    GROUPBOX        "Tile type",IDC_STATIC,162,7,78,166
+    CONTROL         "Platform",IDC_TILE_PLATFORM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,169,15,63,8
+    CONTROL         "Platform corner",IDC_TILE_PLATFORMCORNER,"Button",
+                    BS_AUTORADIOBUTTON,169,26,61,8
+    CONTROL         "Platform 2corner",IDC_TILE_PLATFORM2CORNER,"Button",
+                    BS_AUTORADIOBUTTON,169,36,64,8
+    CONTROL         "Wall",IDC_TILE_WALL,"Button",BS_AUTORADIOBUTTON,169,82,
+                    60,8
+    CONTROL         "Wall corner",IDC_TILE_WALLCORNER,"Button",
+                    BS_AUTORADIOBUTTON,169,92,62,8
+    CONTROL         "Catwalk end",IDC_TILE_CATWALKEND,"Button",
+                    BS_AUTORADIOBUTTON,169,119,61,8
+    CONTROL         "Ramp",IDC_TILE_RAMPTYPE,"Button",BS_AUTORADIOBUTTON,169,
+                    130,62,8
+    CONTROL         "Empty",IDC_TILE_EMPTY,"Button",BS_AUTORADIOBUTTON,169,
+                    149,61,8
+    CONTROL         "Other",IDC_TILE_OTHER,"Button",BS_AUTORADIOBUTTON,169,
+                    159,63,8
+    CONTROL         "Platform 2 corner cross",IDC_TILE_PLATFORM2CORNERCROSS,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE,169,46,63,15
+    CONTROL         "Platform 3corner",IDC_TILE_PLATFORM3CORNER,"Button",
+                    BS_AUTORADIOBUTTON,169,63,63,8
+    CONTROL         "Platform 4corner",IDC_TILE_PLATFORM4CORNER,"Button",
+                    BS_AUTORADIOBUTTON,169,73,64,8
+    CONTROL         "Catwalk",IDC_TILE_CATWALK,"Button",BS_AUTORADIOBUTTON,
+                    169,111,64,8
+    CONTROL         "Wall block",IDC_TILE_WALLBLOCK,"Button",
+                    BS_AUTORADIOBUTTON,169,102,58,8
+    CONTROL         "Cylinder",IDC_TILE_CYLINDERCHECK,"Button",
+                    BS_AUTORADIOBUTTON,13,174,63,9
+    LTEXT           "Override texture",IDC_STATIC,7,50,29,19
+    EDITTEXT        IDC_TILE_TEXTURE,40,53,119,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_TILE_BROWSE_TEXTURE,51,68,36,13
+    PUSHBUTTON      "Remove",IDC_TILE_REMOVE_TEXTURE,92,68,36,13
+    LTEXT           "Collision mesh",IDC_STATIC,7,83,31,18
+    EDITTEXT        IDC_TILE_COLLISION_MESH,40,84,119,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_TILE_BROWSE_CMESH,51,99,36,13,WS_DISABLED
+    PUSHBUTTON      "Remove",IDC_TILE_REMOVE_CMESH,92,99,36,13,WS_DISABLED
+    LTEXT           "Sub category",IDC_STATIC,7,110,30,18
+    EDITTEXT        IDC_TILE_SUBCATEGORY,40,114,118,12,ES_AUTOHSCROLL
+    LTEXT           "Height level",IDC_STATIC,82,134,26,16
+    EDITTEXT        IDC_TILE_HEIGHT_LEVEL,107,137,50,12,ES_AUTOHSCROLL
+    LTEXT           "Exact height",IDC_STATIC,81,153,26,16
+    EDITTEXT        IDC_TILE_HEIGHT,107,156,50,12,ES_AUTOHSCROLL
+    LTEXT           "Shape param",IDC_STATIC,81,173,26,16
+    EDITTEXT        IDC_TILE_SHAPE_PARAM,107,176,50,12,ES_AUTOHSCROLL
+    CONTROL         "Hole",IDC_TILE_HOLE,"Button",BS_AUTORADIOBUTTON,169,139,
+                    62,8
+    CONTROL         "Dummy tile",IDC_TILE_DUMMY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,83,196,74,8
+END
+
+IDD_STATIC_OBJECT DIALOGEX 0, 0, 214, 241
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Static object properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_SO_OK,157,220,50,14
+    PUSHBUTTON      "Cancel",ID_SO_CANCEL,7,220,50,14
+    LTEXT           "Name:",IDC_STATIC,17,7,26,10
+    EDITTEXT        IDC_SO_NAME,44,7,125,12,ES_AUTOHSCROLL
+    LTEXT           "Mesh:",IDC_STATIC,17,22,22,10
+    EDITTEXT        IDC_SO_MESH,44,21,126,13,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_SO_BROWSE_MESH,173,15,34,13
+    LTEXT           "Bounding volume coefficient",IDC_STATIC,7,98,59,16
+    EDITTEXT        IDC_SO_BVCOEFFICIENT,65,99,49,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Remove",IDC_SO_REMOVE_MESH,173,28,34,13
+    CONTROL         "Collides with objects",IDC_SO_COBJECTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,127,79,8
+    GROUPBOX        "Object type",IDC_STATIC,7,137,151,81
+    LTEXT           "Target ID",IDC_SO_TARGET_ID_TEXT,162,155,38,9
+    EDITTEXT        IDC_SO_TARGET_ID,164,166,36,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_SO_BROWSE_TARGET,164,178,36,13,WS_DISABLED
+    LTEXT           "ID",IDC_SO_TARGET_ID_TEXT2,160,204,8,9
+    EDITTEXT        IDC_SO_ID,171,203,36,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Drop when loaded",IDC_SO_DROPLOADED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,116,72,8
+    LTEXT           "Default particle effect",IDC_STATIC,15,31,26,23
+    EDITTEXT        IDC_SO_CONTROLLER,44,35,46,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_SO_BROWSE_PEFFECT,92,35,34,13
+    PUSHBUTTON      "Remove",IDC_SO_REMOVE_PEFFECT,127,35,34,13
+    LTEXT           "Collision param",IDC_STATIC,93,51,29,17
+    EDITTEXT        IDC_DO_COLLISIONPARAM,125,54,82,12,ES_AUTOHSCROLL
+    GROUPBOX        "Collision type",IDC_STATIC,124,69,83,44
+    CONTROL         "Default (spherical)",IDC_DO_COLLISION_SPHERE,"Button",
+                    BS_AUTORADIOBUTTON,131,80,71,9
+    CONTROL         "Cylinder",IDC_DO_COLLISION_CYLINDER,"Button",
+                    BS_AUTORADIOBUTTON,131,90,69,9
+    CONTROL         "Box",IDC_DO_COLLISION_BOX,"Button",BS_AUTORADIOBUTTON,
+                    131,100,69,9
+    PUSHBUTTON      "Custom event action",IDC_SO_CUSTOMEA,87,117,80,14
+    LTEXT           "Alpha",IDC_SO_TARGET_ID_TEXT3,41,88,21,9
+    EDITTEXT        IDC_SO_ALPHA,65,86,49,12,ES_AUTOHSCROLL
+    CONTROL         "Debris",IDC_SO_DEBRIS,"Button",BS_AUTORADIOBUTTON,14,
+                    149,56,9
+    CONTROL         "Energy pod",IDC_SO_ENERGY_POD,"Button",
+                    BS_AUTORADIOBUTTON,14,159,56,9
+    CONTROL         "Repair pod",IDC_SO_REPAIR_POD,"Button",
+                    BS_AUTORADIOBUTTON,14,170,56,9
+    CONTROL         "Gadget",IDC_SO_GADGET,"Button",BS_AUTORADIOBUTTON,14,
+                    180,56,9
+    CONTROL         "Level teleport",IDC_SO_LEVEL_TELEPORT,"Button",
+                    BS_AUTORADIOBUTTON,14,191,56,9
+    CONTROL         "Normal teleport",IDC_SO_NORMAL_TELEPORT,"Button",
+                    BS_AUTORADIOBUTTON,14,202,60,9
+    CONTROL         "Ghost object",IDC_SO_GHOSTOBJECT,"Button",
+                    BS_AUTORADIOBUTTON,89,149,56,9
+    CONTROL         "Start pos",IDC_SO_STARTPOS,"Button",BS_AUTORADIOBUTTON,
+                    89,159,56,9
+    CONTROL         "Ship patch",IDC_SO_PATCH,"Button",BS_AUTORADIOBUTTON,89,
+                    170,56,9
+    CONTROL         "Gadget component",IDC_SO_COMPONENT,"Button",
+                    BS_AUTORADIOBUTTON,89,180,67,9
+    CONTROL         "Quest item",IDC_SO_QUESTITEM,"Button",
+                    BS_AUTORADIOBUTTON,89,191,56,9
+    PUSHBUTTON      "Set default effect pos",IDC_SO_DEFAULT_EFFECT_POS,7,60,
+                    80,15
+END
+
+IDD_VESSEL DIALOGEX 0, 0, 212, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vessel properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_VESSEL_OK,154,140,50,14
+    PUSHBUTTON      "Cancel",ID_VESSEL_CANCEL,7,140,50,14
+    PUSHBUTTON      "Edit dynamic object properties",
+                    ID_VESSEL_DYNAMIC_OBJECT,100,22,104,17,BS_MULTILINE
+    LTEXT           "Thrust",IDC_STATIC,7,7,35,8
+    EDITTEXT        IDC_VESSEL_THRUST,46,7,50,12,ES_AUTOHSCROLL
+    LTEXT           "Levitation force",IDC_STATIC,7,19,35,15
+    EDITTEXT        IDC_VESSEL_LFORCE,46,21,50,12,ES_AUTOHSCROLL
+    LTEXT           "Zero distance",IDC_STATIC,7,36,35,17
+    EDITTEXT        IDC_VESSEL_ZERO_DIST,46,38,50,12,ES_AUTOHSCROLL
+    LTEXT           "Levitation coefficient",IDC_STATIC,7,54,35,17
+    EDITTEXT        IDC_VESSEL_LCOEF,46,57,50,12,ES_AUTOHSCROLL
+    LTEXT           "Turn speed",IDC_STATIC,100,7,40,8
+    EDITTEXT        IDC_VESSEL_TURN_SPEED,142,7,62,12,ES_AUTOHSCROLL
+    GROUPBOX        "Explosion on death",IDC_STATIC,102,43,102,57
+    LTEXT           "Damage",IDC_STATIC,113,54,32,10
+    EDITTEXT        IDC_VESSEL_EXP_DAMAGE,147,53,50,12,ES_AUTOHSCROLL
+    LTEXT           "Force",IDC_STATIC,115,69,32,10
+    EDITTEXT        IDC_VESSEL_EXP_FORCE,147,67,50,12,ES_AUTOHSCROLL
+    LTEXT           "Radius",IDC_STATIC,115,85,32,10
+    EDITTEXT        IDC_VESSEL_EXP_RADIUS,147,83,50,12,ES_AUTOHSCROLL
+    LTEXT           "Max energy",IDC_STATIC,7,73,35,17
+    EDITTEXT        IDC_VESSEL_ENERGY,46,76,50,12,ES_AUTOHSCROLL
+    LTEXT           "Energy regeneration",IDC_STATIC,7,91,35,17
+    EDITTEXT        IDC_VESSEL_ENERGY_REG,46,94,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Accelerate",IDC_VESSEL_ACCELERATE,7,111,53,12
+    PUSHBUTTON      "Brake",IDC_VESSEL_BRAKE,65,111,53,12
+    PUSHBUTTON      "Turn",IDC_VESSEL_TURN,122,111,53,12
+    PUSHBUTTON      "Ammo spawn adjustment",IDC_VESSEL_AMMOSPAWN,77,129,50,
+                    25,BS_MULTILINE
+END
+
+IDD_SHIP DIALOGEX 0, 0, 171, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ship properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_SHIP_OK,114,60,50,14
+    PUSHBUTTON      "Cancel",ID_SHIP_CANCEL,7,60,50,14
+    PUSHBUTTON      "Edit vessel properties",ID_SHIP_VESSEL,114,15,50,22,
+                    BS_MULTILINE
+    LTEXT           "Max load",IDC_STATIC,7,9,35,8
+    EDITTEXT        IDC_SHIP_MAX_LOAD,52,7,50,12,ES_AUTOHSCROLL
+    LTEXT           "Boost force",IDC_STATIC,7,26,41,8
+    EDITTEXT        IDC_SHIP_BOOST_FORCE,52,24,50,12,ES_AUTOHSCROLL
+    LTEXT           "Boost energy consumption",IDC_STATIC,7,38,43,17
+    EDITTEXT        IDC_SHIP_BOOST_CON,52,41,50,12,ES_AUTOHSCROLL
+END
+
+IDD_ENEMY DIALOGEX 0, 0, 320, 259
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enemy properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_ENEMY_OK,263,238,50,14
+    PUSHBUTTON      "Cancel",ID_ENEMY_CANCEL,7,238,50,14
+    PUSHBUTTON      "Edit vessel properties",ID_ENEMY_VESSEL,122,237,94,15,
+                    BS_MULTILINE
+    GROUPBOX        "AI",IDC_STATIC,7,7,169,172
+    LTEXT           "Shooting distance",IDC_STATIC,13,16,34,19
+    EDITTEXT        IDC_ENEMY_SHOOT_DIST,51,18,45,12,ES_AUTOHSCROLL
+    LTEXT           "Minimum distance",IDC_STATIC,13,34,34,19
+    EDITTEXT        IDC_ENEMY_MIN_DIST,51,36,45,12,ES_AUTOHSCROLL
+    LTEXT           "Reaction distance",IDC_STATIC,13,53,34,19
+    EDITTEXT        IDC_ENEMY_REACTION_DIST,51,55,45,12,ES_AUTOHSCROLL
+    CONTROL         "Mobile",IDC_ENEMY_MOBILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,14,70,8
+    CONTROL         "Suicidal",IDC_ENEMY_SUICIDAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,25,70,8
+    CONTROL         "Shoots",IDC_ENEMY_SHOOTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,36,70,8
+    CONTROL         "Explodes on collision",IDC_ENEMY_EXPLODES,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,103,46,70,16
+    LTEXT           "Gadget 1",IDC_STATIC,184,17,34,9
+    EDITTEXT        IDC_ENEMY_GADGET1,222,15,45,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",ID_ENEMY_BROWSE_GADGET1,270,14,43,14
+    CONTROL         "Bolted to ground",IDC_ENEMY_BOLTED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,103,63,70,8
+    CONTROL         "Calls for help",IDC_ENEMY_CALLHELP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,103,73,61,8
+    CONTROL         "Waits for good angle",IDC_ENEMY_WAITANGLE,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,103,82,61,16
+    LTEXT           "Aggro maintain",IDC_STATIC,14,70,34,19
+    EDITTEXT        IDC_ENEMY_AGGROMAINTAIN,51,72,45,12,ES_AUTOHSCROLL
+    LTEXT           "Help call radius",IDC_STATIC,14,87,34,19
+    EDITTEXT        IDC_ENEMY_HELP_DIST,51,88,45,12,ES_AUTOHSCROLL
+    LTEXT           "Help call frequency",IDC_STATIC,14,103,34,19
+    EDITTEXT        IDC_ENEMY_HELPFREQUENCY,51,105,45,12,ES_AUTOHSCROLL
+    GROUPBOX        "Aggro response",IDC_STATIC,99,99,78,42
+    CONTROL         "Attack",IDC_ENEMY_AGGRO_ATTACK,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,107,113,64,8
+    CONTROL         "Escape",IDC_ENEMY_AGGRO_ESCAPE,"Button",
+                    BS_AUTORADIOBUTTON,107,122,54,8
+    CONTROL         "Follow route",IDC_ENEMY_AGGRO_ROUTE,"Button",
+                    BS_AUTORADIOBUTTON,107,131,62,8
+    GROUPBOX        "Gadgets",IDC_STATIC,180,7,133,134
+    LTEXT           "Gadget 2",IDC_STATIC,184,33,34,9
+    EDITTEXT        IDC_ENEMY_GADGET2,222,31,45,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",ID_ENEMY_BROWSE_GADGET2,270,30,43,14
+    GROUPBOX        "Gadget 2 usage",IDC_STATIC,180,44,133,97
+    GROUPBOX        "Trigger type",IDC_STATIC,180,55,83,54
+    CONTROL         "Active",IDC_VESSEL_G2TRIGGER_ACTIVE,"Button",
+                    BS_AUTORADIOBUTTON,184,66,73,8
+    CONTROL         "Health limit",IDC_VESSEL_G2TRIGGER_HEALTH,"Button",
+                    BS_AUTORADIOBUTTON,184,74,73,8
+    CONTROL         "Damage response",IDC_VESSEL_G2TRIGGER_DAMAGE,"Button",
+                    BS_AUTORADIOBUTTON,184,82,73,8
+    CONTROL         "Aggro time",IDC_VESSEL_G2TRIGGER_AGGROTIME,"Button",
+                    BS_AUTORADIOBUTTON,184,90,73,8
+    CONTROL         "Script",IDC_VESSEL_G2TRIGGER_SCRIPT,"Button",
+                    BS_AUTORADIOBUTTON,184,98,73,8
+    LTEXT           "Trigger param 1",IDC_STATIC,269,50,34,17
+    EDITTEXT        IDC_ENEMY_TRIGGERPARAM1,268,67,45,12,ES_AUTOHSCROLL
+    LTEXT           "Trigger param 2",IDC_STATIC,269,81,34,17
+    EDITTEXT        IDC_ENEMY_TRIGGERPARAM2,268,98,45,12,ES_AUTOHSCROLL
+    CONTROL         "Disables gadget 1",IDC_VESSEL_DISABLE_G1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,113,75,8
+    LTEXT           "Trigger script",IDC_STATIC,181,127,41,9
+    EDITTEXT        IDC_ENEMY_TRIGGER_SCRIPT,223,125,90,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",ID_ENEMY_BROWSE_TRIGGER_SCRIPT,272,114,41,10
+    CONTROL         "Display health bar",IDC_VESSEL_DISPLAY_HEALTH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,121,198,72,9
+    CONTROL         "Can be possessed",IDC_VESSEL_POSSESSABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,121,209,72,9
+    LTEXT           "On aggro script",IDC_STATIC,117,185,50,9
+    EDITTEXT        IDC_ENEMY_ONAGGRO_SCRIPT,169,183,112,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",ID_ENEMY_BROWSE_ONAGGRO_SCRIPT,284,185,29,11
+    GROUPBOX        "Altered damage type",IDC_STATIC,7,180,105,53
+    CONTROL         "Energy",IDC_VESSEL_TYPE_ENERGY,"Button",
+                    BS_AUTORADIOBUTTON,15,193,86,10
+    CONTROL         "Plasma",IDC_VESSEL_TYPE_PLASMA,"Button",
+                    BS_AUTORADIOBUTTON,15,202,86,10
+    CONTROL         "Projectile",IDC_VESSEL_TYPE_PROJECTILE,"Button",
+                    BS_AUTORADIOBUTTON,15,212,86,10
+    CONTROL         "Stun",IDC_VESSEL_TYPE_STUN2,"Button",BS_AUTORADIOBUTTON,
+                    15,222,86,10
+    LTEXT           "Altered damage coefficient",IDC_STATIC,117,218,90,9
+    EDITTEXT        IDC_ENEMY_DAMAGE_COEF,205,217,39,12,ES_AUTOHSCROLL
+    CONTROL         "Don't follow route",IDC_ENEMY_AI_DONT_FOLLOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,126,82,9
+    CONTROL         "Continue to last waypoint after interruption",
+                    IDC_ENEMY_AI_CONTINUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,143,145,8
+    CONTROL         "Disable pathfinding",IDC_ENEMY_AI_DISABLE_PATHFINDING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,153,77,9
+    CONTROL         "Use custom route",IDC_ENEMY_AI_USE_CUSTOM_ROUTE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,164,74,9
+    CONTROL         "Anticipate target movement",IDC_ENEMY_AI_ANTICIPATE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,144,102,10
+END
+
+IDD_DIALOGUE_LINE DIALOGEX 0, 0, 200, 108
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialogue line properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "OK",ID_DL_OK,143,87,50,14
+    PUSHBUTTON      "Cancel",ID_DL_CANCEL,7,87,50,14
+    CTEXT           "Speaker",IDC_STATIC,7,7,50,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_DL_SPEAKER,59,7,134,12,ES_AUTOHSCROLL
+    CTEXT           "Comment",IDC_STATIC,7,20,50,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_DL_COMMENT,59,22,134,60,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+IDD_DIALOGUE DIALOGEX 0, 0, 189, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialogue properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Edit",ID_D_EDIT,142,233,40,14
+    PUSHBUTTON      "Delete",ID_D_DELETE,7,233,41,14
+    LISTBOX         IDC_D_LIST,7,109,175,121,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",ID_D_ADD,98,233,38,14
+    DEFPUSHBUTTON   "OK",ID_D_OK,142,250,40,14
+    PUSHBUTTON      "Cancel",ID_D_CANCEL,7,250,41,14
+    PUSHBUTTON      "Move down",ID_D_MOVE_DOWN,52,250,42,14
+    PUSHBUTTON      "Move up",ID_D_MOVE_UP,98,250,38,14
+    LTEXT           "Name",IDC_STATIC,7,7,27,9
+    EDITTEXT        IDC_D_NAME,37,7,145,12,ES_AUTOHSCROLL
+    LTEXT           "On close script",IDC_STATIC,7,18,29,16
+    EDITTEXT        IDC_D_SCRIPT,37,21,104,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_D_BROWSE_SCRIPT,142,20,40,14
+    LTEXT           "New mission objective",IDC_STATIC,7,36,74,8
+    CONTROL         "Update mission objective",IDC_D_UPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,85,36,97,9
+    EDITTEXT        IDC_D_OBJECTIVE,7,47,175,39,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Mission objective priority:",IDC_STATIC,7,88,82,8
+    EDITTEXT        IDC_D_PRIORITY,89,87,54,12,ES_AUTOHSCROLL
+    LTEXT           "Dialogue lines:",IDC_STATIC,7,98,82,8
+END
+
+IDD_GET_STRING DIALOG  0, 0, 154, 41
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_GS_OK,97,20,50,14
+    PUSHBUTTON      "Cancel",ID_GS_CANCEL,7,20,50,14
+    EDITTEXT        IDC_GS_STRING,7,7,140,12,ES_AUTOHSCROLL
+END
+
+IDD_TRIGGER DIALOGEX 0, 0, 276, 155
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Trigger properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_TRIGGER_OK,219,134,50,14
+    PUSHBUTTON      "Cancel",ID_TRIGGER_CANCEL,7,134,50,14
+    GROUPBOX        "Trigger action type",IDC_STATIC,7,7,76,60
+    GROUPBOX        "Triggering objects",IDC_STATIC,89,7,76,68
+    CONTROL         "Player",IDC_TRIGGER_OPLAYER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,19,65,8
+    CONTROL         "Enemy",IDC_TRIGGER_OENEMY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,30,65,8
+    CONTROL         "Dynamic object",IDC_TRIGGER_ODO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,95,41,65,8
+    CONTROL         "Multitriggering",IDC_TRIGGER_MULTITRIGGERING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,97,63,10
+    LTEXT           "Action target",IDC_STATIC,167,19,23,18
+    EDITTEXT        IDC_TRIGGER_TARGET,193,21,76,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_TRIGGER_BROWSE_ACTION,236,7,33,12
+    CONTROL         "Possessed enemy",IDC_TRIGGER_OPOSSESSED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,95,51,67,8
+    CONTROL         "Specific object",IDC_TRIGGER_OSPECIFIC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,95,61,65,8
+    LTEXT           "ID",IDC_STATIC,168,7,10,10
+    EDITTEXT        IDC_TRIGGER_ID,181,7,33,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Multitriggering delay",IDC_STATIC,7,108,64,10
+    EDITTEXT        IDC_TRIGGER_DELAY,7,119,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set trigger effect",IDC_TRIGGER_SET_EFFECT,187,36,62,14,
+                    WS_DISABLED
+    LTEXT           "Triggering object ID",IDC_STATIC,167,52,63,9
+    EDITTEXT        IDC_TRIGGER_TRIGGERING_ID,233,52,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRIGGER_MESSAGE,83,101,127,47,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_DISABLED
+    LTEXT           "Screen message",IDC_STATIC,83,92,56,8
+    GROUPBOX        "Damage type",IDC_STATIC,212,70,57,56
+    CONTROL         "Energy",IDC_AMMO_TYPE_ENERGY,"Button",
+                    BS_AUTORADIOBUTTON,220,84,44,10
+    CONTROL         "Plasma",IDC_AMMO_TYPE_PLASMA,"Button",
+                    BS_AUTORADIOBUTTON,220,92,41,10
+    CONTROL         "Projectile",IDC_AMMO_TYPE_PROJECTILE,"Button",
+                    BS_AUTORADIOBUTTON,220,102,43,10
+    CONTROL         "Stun",IDC_AMMO_TYPE_STUN,"Button",BS_AUTORADIOBUTTON,
+                    220,110,42,10
+    LTEXT           "Damage",IDC_STATIC,121,78,28,9
+    EDITTEXT        IDC_TRIGGER_DAMAGE,153,78,50,12,ES_AUTOHSCROLL
+    CONTROL         "Dialogue",IDC_TRIGGER_TYPE_DIALOGUE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,14,19,60,8
+    CONTROL         "Terminal",IDC_TRIGGER_TYPE_TERMINAL,"Button",
+                    BS_AUTORADIOBUTTON,14,28,60,8
+    CONTROL         "Assistant msg",IDC_TRIGGER_TYPE_MESSAGE,"Button",
+                    BS_AUTORADIOBUTTON,14,36,66,8
+    CONTROL         "Area damage",IDC_TRIGGER_TYPE_DAMAGE,"Button",
+                    BS_AUTORADIOBUTTON,14,45,60,8
+    CONTROL         "Effect",IDC_TRIGGER_TYPE_EFFECT,"Button",
+                    BS_AUTORADIOBUTTON,14,54,60,8
+    CONTROL         "Active by default",IDC_TRIGGER_ACTIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,70,71,10
+    CONTROL         "Effect at object",IDC_TRIGGER_EFFECT_AT_OBJECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,82,63,10
+END
+
+IDD_PARTICLE_EMITTER DIALOGEX 0, 0, 337, 306
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Particle effect properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_PE_OK,280,285,50,14
+    PUSHBUTTON      "Cancel",ID_PE_CANCEL,8,285,50,14
+    LTEXT           "Name",IDC_STATIC,15,17,22,10
+    EDITTEXT        IDC_PE_NAME,48,17,106,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PE_TEXTURE,50,85,106,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Texture",IDC_PE_LABEL_RESOURCE,16,86,25,10
+    PUSHBUTTON      "Browse",IDC_PE_BROWSE_TEXTURE,159,85,32,13
+    EDITTEXT        IDC_PE_MAX_PARTICLES,80,50,50,12,ES_AUTOHSCROLL
+    LTEXT           "Max particle count",IDC_STATIC,15,50,63,10
+    LTEXT           "Start delay",IDC_STATIC,134,38,49,10
+    LTEXT           "AutoEmit frequency",IDC_STATIC,134,50,63,10
+    EDITTEXT        IDC_PE_START_DELAY,200,36,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PE_FREQUENCY,200,50,50,12,ES_AUTOHSCROLL
+    CONTROL         "Gravity enabled",IDC_PE_GRAVITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,220,68,10
+    CONTROL         "Auto emit particles",IDC_PE_AUTOEMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,164,19,98,9
+    GROUPBOX        "Particle settings",IDC_STATIC,8,74,322,131
+    PUSHBUTTON      "Set start position",IDC_PE_POSITION,15,102,100,12
+    PUSHBUTTON      "Set start position spread",IDC_PE_POSITION_SPREAD,119,
+                    102,100,12
+    PUSHBUTTON      "Set direction",IDC_PE_DIRECTION,15,118,100,12
+    PUSHBUTTON      "Set direction spread",IDC_PE_DIRECTION_SPREAD,119,118,
+                    100,12
+    PUSHBUTTON      "Color at start",IDC_PE_COLOR_START,15,134,100,12
+    PUSHBUTTON      "Color at end",IDC_PE_COLOR_END,119,134,100,12
+    LTEXT           "Size start",IDC_STATIC,15,156,43,8
+    EDITTEXT        IDC_PE_SIZE_START,63,153,52,13,ES_AUTOHSCROLL
+    LTEXT           "Size end",IDC_STATIC,125,156,29,8
+    EDITTEXT        IDC_PE_SIZE_END,165,153,53,13,ES_AUTOHSCROLL
+    LTEXT           "Min speed",IDC_STATIC,15,172,47,8
+    EDITTEXT        IDC_PE_MINSPEED,63,169,52,13,ES_AUTOHSCROLL
+    LTEXT           "Max speed",IDC_STATIC,125,172,37,8
+    EDITTEXT        IDC_PE_MAXSPEED,165,169,53,13,ES_AUTOHSCROLL
+    LTEXT           "Min weight",IDC_STATIC,15,188,35,8
+    EDITTEXT        IDC_PE_MINWEIGHT,63,185,52,13,ES_AUTOHSCROLL
+    LTEXT           "Max weight",IDC_STATIC,125,188,38,8
+    EDITTEXT        IDC_PE_MAXWEIGHT,165,185,53,13,ES_AUTOHSCROLL
+    LTEXT           "Particles emitted",IDC_STATIC,15,39,59,9
+    EDITTEXT        IDC_PE_EMIT_COUNT,80,36,49,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Remove",IDC_PE_REMOVE_TEXTURE,195,85,32,13
+    GROUPBOX        "Emit settings",IDC_STATIC,8,7,322,60
+    PUSHBUTTON      "Set handler",IDC_PE_SET_HANDLER,255,33,68,12
+    PUSHBUTTON      "Set initializer",IDC_PE_SET_INITIALIZER,255,49,68,12
+    LTEXT           "Lifetime",IDC_STATIC,228,104,33,8
+    EDITTEXT        IDC_PE_TTL,266,101,52,13,ES_AUTOHSCROLL
+    CONTROL         "Has a mesh",IDC_PE_HASMESH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,86,87,10
+    CONTROL         "Inherit parent speed",IDC_PE_INHERITSPEED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,227,118,92,10
+    CONTROL         "Billboarded",IDC_PE_BILLBOARD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,227,131,89,10
+    CONTROL         "Additive blend",IDC_PE_ADDITIVEBLEND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,227,144,88,10
+    CONTROL         "Exact speed determination",IDC_PE_EXACTSPEED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,227,157,96,10
+    CONTROL         "Replace old particles",IDC_PE_REPLACEOLD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,227,169,94,10
+    GROUPBOX        "Gravity",IDC_STATIC,8,210,322,26
+    PUSHBUTTON      "Set local gravity vector",IDC_PE_GRAVITY_VECTOR,213,218,
+                    100,12
+    CONTROL         "Use external gravity",IDC_PE_EXTERNAL_GRAVITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,112,220,80,10
+    CONTROL         "Rotation matrices enabled",IDC_PE_ROTMAT_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,249,96,10
+    CONTROL         "Inherit parent rotation",IDC_PE_INHERIT_ROTMAT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,249,87,10
+    EDITTEXT        IDC_PE_ROTMAT_COUNT,276,261,27,12,ES_AUTOHSCROLL
+    LTEXT           "Matrix count",IDC_STATIC,226,263,46,10
+    PUSHBUTTON      "Set min rotation speed",IDC_PE_SET_MIN_ROTMAT,15,261,
+                    100,12
+    PUSHBUTTON      "Set max rotation speed",IDC_PE_SET_MAX_ROTMAT,119,261,
+                    100,12
+    GROUPBOX        "Mesh rotation matrices",IDC_STATIC,8,239,322,43
+END
+
+IDD_GADGET DIALOGEX 0, 0, 402, 388
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gadget properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_GADGET_OK,345,367,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",ID_GADGET_CANCEL,205,367,50,14
+    GROUPBOX        "Weapon",IDC_STATIC,7,116,388,116
+    GROUPBOX        "Gadget type",IDC_STATIC,15,15,68,89
+    CONTROL         "Weapon",IDC_GADGET_TYPE_WEAPON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,21,26,57,11
+    CONTROL         "Kinetic gun",IDC_GADGET_TYPE_KINETIC,"Button",
+                    BS_AUTORADIOBUTTON,21,36,57,11
+    CONTROL         "Hover engine",IDC_GADGET_TYPE_HOVER,"Button",
+                    BS_AUTORADIOBUTTON,21,47,57,11
+    CONTROL         "Mind control",IDC_GADGET_TYPE_MIND_CONTROL,"Button",
+                    BS_AUTORADIOBUTTON,21,58,57,11
+    CONTROL         "Shield",IDC_GADGET_TYPE_SHIELD,"Button",
+                    BS_AUTORADIOBUTTON,21,68,57,11
+    CONTROL         "Stealth",IDC_GADGET_TYPE_STEALTH,"Button",
+                    BS_AUTORADIOBUTTON,21,79,57,11
+    GROUPBOX        "General",IDC_STATIC,7,7,388,105
+    LTEXT           "Name",IDC_STATIC,89,18,24,9
+    EDITTEXT        IDC_GADGET_NAME,115,16,100,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Icon",IDC_STATIC,89,30,24,9
+    EDITTEXT        IDC_GADGET_ICON,115,29,100,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "ID",IDC_STATIC,227,17,11,8
+    EDITTEXT        IDC_GADGET_ID,240,16,51,13,ES_AUTOHSCROLL | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_GADGET_BROWSEICON,217,28,35,13,WS_DISABLED
+    PUSHBUTTON      "Remove",IDC_GADGET_REMOVEICON,255,28,35,13,WS_DISABLED
+    LTEXT           "Capacity requirement",IDC_STATIC,297,34,40,17
+    EDITTEXT        IDC_GADGET_MASS,339,39,43,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Weapon mode",IDC_STATIC,15,125,81,93
+    GROUPBOX        "On hit",IDC_STATIC,104,125,283,57
+    LTEXT           "Damage",IDC_STATIC,109,136,34,10
+    EDITTEXT        IDC_GADGET_WDAMAGE,151,135,60,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Explosion radius",IDC_STATIC,109,147,34,17
+    EDITTEXT        IDC_GADGET_WEXPRADIUS,151,150,60,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Particle effect",IDC_STATIC,105,166,44,10
+    EDITTEXT        IDC_GADGET_HITPEFFECT,151,165,38,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    CONTROL         "Explodes",IDC_GADGET_WBEXPLODES,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,215,136,57,10
+    PUSHBUTTON      "Browse",IDC_GADGET_HITPEFFECTBROWSE,194,164,35,13,
+                    WS_DISABLED
+    LTEXT           "Speed",IDC_GADGET_LBLSPEED,109,185,27,10
+    EDITTEXT        IDC_GADGET_WSPEED,140,184,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Angle",IDC_STATIC,201,185,27,10
+    EDITTEXT        IDC_GADGET_WANGLE,232,184,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Lifetime",IDC_STATIC,201,200,27,10
+    EDITTEXT        IDC_GADGET_WLIFETIME,232,199,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Energy consumed",IDC_STATIC,103,196,35,16
+    EDITTEXT        IDC_GADGET_WEC,140,199,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Firing pace",IDC_STATIC,203,212,20,18
+    EDITTEXT        IDC_GADGET_WFIREPACE,232,214,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Ammo ID",IDC_GADGET_LBLAMMOID,295,216,33,10
+    EDITTEXT        IDC_GADGET_WAMMOID,331,214,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_GADGET_WBROWSEAMMO,293,199,35,13,
+                    WS_DISABLED
+    LTEXT           "Ammo count",IDC_STATIC,116,214,21,16
+    EDITTEXT        IDC_GADGET_WAMMOCOUNT,140,213,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Kinetic gun",IDC_STATIC,7,236,388,46
+    LTEXT           "Force",IDC_STATIC,109,249,27,10
+    EDITTEXT        IDC_GADGET_PFORCE,140,247,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Angle",IDC_STATIC,201,249,27,10
+    EDITTEXT        IDC_GADGET_PANGLE,232,247,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Radius",IDC_STATIC,13,249,27,10
+    EDITTEXT        IDC_GADGET_PRADIUS,46,247,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Energy consumed",IDC_STATIC,13,258,33,19
+    EDITTEXT        IDC_GADGET_PEC,46,263,56,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Firing pace",IDC_STATIC,111,260,20,18
+    EDITTEXT        IDC_GADGET_PFIREPACE,140,263,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Particle effect ID",IDC_STATIC,294,245,28,16
+    EDITTEXT        IDC_GADGET_PPEFFECT,326,248,30,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_GADGET_PBROWSEPEFFECT,355,247,29,13,
+                    WS_DISABLED
+    GROUPBOX        "Hover engine",IDC_STATIC,105,289,94,46
+    LTEXT           "Force",IDC_STATIC,114,300,22,10
+    EDITTEXT        IDC_GADGET_HEC,141,314,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_GADGET_HFORCE,140,299,56,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Energy consumed",IDC_STATIC,106,312,33,19
+    GROUPBOX        "Stealth",IDC_STATIC,7,289,95,46
+    LTEXT           "Coefficient",IDC_STATIC,16,300,35,10
+    EDITTEXT        IDC_GADGET_STEALTH_COEF,54,299,44,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Energy consumption",IDC_STATIC,13,313,39,16
+    EDITTEXT        IDC_GADGET_STEALTH_ENERGY,54,316,44,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Mind control",IDC_STATIC,7,337,192,44
+    LTEXT           "Energy consumed",IDC_STATIC,15,345,45,16
+    EDITTEXT        IDC_GADGET_POSEC,63,347,44,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Shield",IDC_STATIC,203,289,192,74
+    LTEXT           "Damage coefficient",IDC_STATIC,271,299,63,10
+    EDITTEXT        IDC_GADGET_SDC,339,298,48,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Multiplayer",IDC_GADGET_MULTIPLAYER,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,298,18,47,9
+    LTEXT           "Description",IDC_STATIC,90,41,41,9
+    EDITTEXT        IDC_GADGET_DESCRIPTION,115,51,138,54,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_DISABLED
+    LTEXT           "Activation sound",IDC_STATIC,262,54,31,19
+    EDITTEXT        IDC_GADGET_SOUND,297,52,91,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_GADGET_BROWSESOUND,315,66,35,13,WS_DISABLED
+    LTEXT           "Activation script",IDC_STATIC,261,80,31,19
+    EDITTEXT        IDC_GADGET_SCRIPT,297,78,91,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_GADGET_BROWSESCRIPT,315,92,35,13,
+                    WS_DISABLED
+    PUSHBUTTON      "Remove",IDC_GADGET_REMOVESOUND,353,66,35,13,WS_DISABLED
+    PUSHBUTTON      "Remove",IDC_GADGET_REMOVESCRIPT,353,92,35,13,
+                    WS_DISABLED
+    CONTROL         "Explodes on fade",IDC_GADGET_WBEXPLODES2,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,215,148,68,10
+    LTEXT           "Sound effect",IDC_STATIC,251,165,44,10
+    EDITTEXT        IDC_GADGET_HITSOUND,297,164,38,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_GADGET_HITSOUNDBROWSE,340,163,35,13,
+                    WS_DISABLED
+    LTEXT           "Script",IDC_STATIC,276,136,21,10
+    EDITTEXT        IDC_GADGET_HITSCRIPT,298,135,83,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_GADGET_HITSCRIPTBROWSE,348,147,35,13,
+                    WS_DISABLED
+    CONTROL         "One use",IDC_GADGET_ONEUSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,348,18,40,10
+    GROUPBOX        "Damage type",IDC_STATIC,208,300,60,56
+    CONTROL         "Energy",IDC_AMMO_TYPE_ENERGY,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,216,313,40,10
+    CONTROL         "Plasma",IDC_AMMO_TYPE_PLASMA,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,216,322,41,10
+    CONTROL         "Projectile",IDC_AMMO_TYPE_PROJECTILE,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,216,331,47,10
+    CONTROL         "Stun",IDC_AMMO_TYPE_STUN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,216,341,44,10
+    LTEXT           "Energy consumed",IDC_STATIC,271,313,63,10
+    EDITTEXT        IDC_GADGET_SEC,339,312,48,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Particle effect",IDC_STATIC,271,328,63,10
+    EDITTEXT        IDC_GADGET_SPEFFECT,339,327,48,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_GADGET_SEFFECTBROWSE,351,341,35,13,
+                    WS_DISABLED
+    LTEXT           "Maintain distance",IDC_STATIC,111,345,37,16
+    EDITTEXT        IDC_GADGET_POSDIST,149,347,44,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Effect radius",IDC_STATIC,15,363,45,8
+    EDITTEXT        IDC_GADGET_POSRADIUS,63,361,44,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Enemy gadget",IDC_GADGET_ENEMY,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,327,28,60,9
+    CONTROL         "Forward",IDC_GADGET_WFORWARD,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,20,136,67,8
+    CONTROL         "Forward alternating",IDC_GADGET_WFORWARDA,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,20,145,73,8
+    CONTROL         "Nova",IDC_GADGET_WNOVA,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,20,153,67,8
+    CONTROL         "Nova alternating",IDC_GADGET_WNOVAA,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,20,162,67,8
+    CONTROL         "Backward (leave)",IDC_GADGET_WBACKWARD,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,20,170,67,8
+    CONTROL         "Thrower",IDC_GADGET_WTHROWER,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,20,179,67,8
+    CONTROL         "Beam",IDC_GADGET_WBEAM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,20,188,67,8
+END
+
+IDD_GET_VECTOR DIALOG  0, 0, 100, 78
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vector"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,53,57,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,57,36,14
+    EDITTEXT        IDC_VECTOR_X,21,7,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VECTOR_Y,21,23,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VECTOR_Z,21,39,72,12,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,7,7,9,9
+    LTEXT           "Y",IDC_STATIC,7,21,9,9
+    LTEXT           "Z",IDC_STATIC,7,39,9,9
+END
+
+IDD_GET_VECTOR4D DIALOG  0, 0, 100, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set vector"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,53,72,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,72,36,14
+    EDITTEXT        IDC_VECTOR_X,21,7,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VECTOR_Y,21,23,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VECTOR_Z,21,39,72,12,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_4D_X,7,7,9,9
+    LTEXT           "Y",IDC_4D_Y,7,21,9,9
+    LTEXT           "Z",IDC_4D_Z,7,39,9,9
+    EDITTEXT        IDC_VECTOR_W,21,56,72,12,ES_AUTOHSCROLL
+    LTEXT           "W",IDC_4D_W,7,56,9,9
+END
+
+IDD_OBJECT_PROPERTIES DIALOGEX 0, 0, 306, 158
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,249,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,137,50,14
+    LTEXT           "Target ID",IDC_OP_TARGETID_MSG,7,55,62,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_OP_TARGETID,76,54,43,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Object ID",IDC_STATIC,39,39,31,8
+    EDITTEXT        IDC_OP_ID,76,38,43,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_OP_BROWSE_TARGET,120,54,29,12,WS_DISABLED
+    LTEXT           "Ref name (optional)",IDC_STATIC,7,22,66,9
+    EDITTEXT        IDC_OP_REFNAME,75,22,74,12,ES_AUTOHSCROLL
+    LTEXT           "Particle effect",IDC_STATIC,25,73,45,8
+    EDITTEXT        IDC_OP_PEFFECT,76,70,43,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_OP_BROWSE_PEFFECT,120,70,29,12
+    LTEXT           "Light effect",IDC_STATIC,32,89,38,8
+    EDITTEXT        IDC_OP_LEFFECT2,76,86,43,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_OP_BROWSE_LEFFECT,120,86,29,12
+    LTEXT           "Controller",IDC_STATIC,38,103,32,8
+    EDITTEXT        IDC_OP_CONTROLLER,76,100,43,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_OP_BROWSE_CONTROLLER,120,100,29,12
+    LTEXT           "Controller param 1",IDC_STATIC,7,115,32,17
+    EDITTEXT        IDC_OP_CPARAM1,39,118,38,12,ES_AUTOHSCROLL
+    LTEXT           "Controller param 2",IDC_STATIC,80,115,32,17
+    EDITTEXT        IDC_OP_CPARAM2,111,118,38,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set effect position",IDC_OP_EFFECT_POS,185,22,85,13
+    CONTROL         "Requires constant update",IDC_OP_REQUIRES_UPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,157,38,98,8
+    LTEXT           "Override script",IDC_OP_SCRIPT_MSG,157,54,50,9
+    EDITTEXT        IDC_OP_SCRIPT,206,52,93,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Script override type",IDC_STATIC,157,66,90,70
+    PUSHBUTTON      "Browse",IDC_OP_BROWSE_SCRIPT,270,65,29,12
+    LTEXT           "Object type",IDC_STATIC,7,7,40,9
+    EDITTEXT        IDC_OP_OBJECTTYPE,48,7,74,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Subtype",IDC_STATIC,126,7,31,9
+    EDITTEXT        IDC_OP_SUBTYPE,158,7,74,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Visible in game",IDC_OP_VISIBLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,121,142,72,9
+    CONTROL         "On death",IDC_OP_SCRIPTTYPE1,"Button",
+                    BS_AUTORADIOBUTTON,163,78,72,8
+    CONTROL         "On aggro",IDC_OP_SCRIPTTYPE2,"Button",
+                    BS_AUTORADIOBUTTON,163,87,72,8
+    CONTROL         "On damage taken",IDC_OP_SCRIPTTYPE3,"Button",
+                    BS_AUTORADIOBUTTON,163,95,72,8
+    CONTROL         "On collision",IDC_OP_SCRIPTTYPE4,"Button",
+                    BS_AUTORADIOBUTTON,163,104,72,8
+    CONTROL         "Custom",IDC_OP_SCRIPTTYPE5,"Button",BS_AUTORADIOBUTTON,
+                    163,113,72,8
+    CONTROL         "None",IDC_OP_SCRIPTTYPE6,"Button",BS_AUTORADIOBUTTON,
+                    163,121,72,8
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 119, 163
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About the editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,142,50,14
+    LTEXT           "On the Edge editor v. 0.105",IDC_STATIC,7,15,98,10
+    LTEXT           "Level, database and campaign editor for the game On the Edge",
+                    IDC_STATIC,7,28,105,20
+    LTEXT           "By Jukka Tykkyläinen from Azuris productions",
+                    IDC_STATIC,7,50,78,21
+    LTEXT           "Copyright 2004-2007",IDC_STATIC,7,74,94,11
+    LTEXT           "Azuris Productions",IDC_STATIC,7,84,94,11
+    LTEXT           "All rights reserved",IDC_STATIC,7,94,94,11
+    LTEXT           "www.ote-game.com",IDC_STATIC,26,113,75,11
+    LTEXT           "j_tykky@hotmail.com",IDC_STATIC,26,124,75,11
+END
+
+IDD_CAMPAIGN_EDITOR DIALOGEX 0, 0, 293, 251
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Campaign editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,236,230,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,177,230,50,14
+    PUSHBUTTON      "Edit",IDC_CE_EDITBLOCK,97,211,40,14
+    PUSHBUTTON      "Delete",IDC_CE_DELETEBLOCK,7,211,41,14
+    LISTBOX         IDC_CE_BLOCKLIST,7,17,130,177,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_CE_ADDBLOCK,53,211,38,14
+    PUSHBUTTON      "Move down",IDC_CE_MOVEDOWN,7,230,42,14
+    PUSHBUTTON      "Move up",IDC_CE_MOVEUP,53,230,38,14
+    LTEXT           "Name",IDC_STATIC,7,196,40,9
+    EDITTEXT        IDC_CE_NAME,49,196,88,12,ES_AUTOHSCROLL
+    LTEXT           "Level list",IDC_STATIC,7,7,33,10
+    LISTBOX         IDC_CE_GADGETLIST,141,17,98,84,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Gadgets the player starts with",IDC_STATIC,144,7,94,10
+    PUSHBUTTON      "Add",IDC_CE_ADDGADGET,246,21,40,14
+    PUSHBUTTON      "Remove",IDC_CE_REMOVEGADGET,246,36,40,14
+    PUSHBUTTON      "Equip",IDC_CE_EQUIPGADGET,246,61,40,14
+    LTEXT           "Gadget 1",IDC_STATIC,141,105,30,8
+    EDITTEXT        IDC_CE_GADGET1,175,104,36,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "Gadget 2",IDC_STATIC,216,105,30,8
+    EDITTEXT        IDC_CE_GADGET2,250,104,36,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "Ship ID",IDC_STATIC,141,122,30,8
+    EDITTEXT        IDC_CE_SHIPID,175,121,36,13,ES_AUTOHSCROLL | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_CE_BROWSESHIP,213,121,36,14
+    CONTROL         "Force campaign ship",IDC_CE_FORCESHIP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,142,137,87,8
+    LTEXT           "Message display on completion",IDC_STATIC,141,148,102,8
+    EDITTEXT        IDC_CE_ENDMESSAGE,141,159,145,67,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "Remove 1",IDC_CE_REMOVEGADGET1,246,86,40,14
+    PUSHBUTTON      "Remove 2",IDC_CE_REMOVEGADGET2,251,121,35,14
+    PUSHBUTTON      "Player terminal",IDC_CE_PLAYER_TERMINAL,108,230,58,14
+END
+
+IDD_CAMPAIGN_BLOCK DIALOGEX 0, 0, 231, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Campaign block properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,174,124,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,124,50,14
+    LTEXT           "Level filename",IDC_STATIC,7,7,51,9
+    EDITTEXT        IDC_CB_LEVEL,59,7,92,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_CB_BROWSE,154,7,37,10
+    GROUPBOX        "Default end condition",IDC_STATIC,7,20,80,61
+    LTEXT           "Target ID",IDC_STATIC,7,86,32,8
+    EDITTEXT        IDC_CB_TARGETID,41,83,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CB_MISSIONOBJECTIVES,88,34,136,74,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Level introduction / mission objectives",IDC_STATIC,89,
+                    23,124,9
+    CONTROL         "Show mission objectives",IDC_CB_SHOWOBJECTIVES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,99,78,9
+    CONTROL         "All enemies dead",IDC_CB_ALLDEAD,"Button",
+                    BS_AUTORADIOBUTTON,14,33,69,8
+    CONTROL         "Target dead",IDC_CB_TARGETDEAD,"Button",
+                    BS_AUTORADIOBUTTON,14,44,69,8
+    CONTROL         "Script",IDC_CB_SCRIPT,"Button",BS_AUTORADIOBUTTON,14,55,
+                    69,8
+    CONTROL         "None",IDC_CB_NONE,"Button",BS_AUTORADIOBUTTON,14,66,69,
+                    8
+    LTEXT           "End condition script",IDC_STATIC,7,111,67,9
+    EDITTEXT        IDC_CB_SCRIPT_NAME,77,110,96,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_CB_BROWSE_SCRIPT,176,111,37,10
+END
+
+IDD_AMMO DIALOGEX 0, 0, 195, 169
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ammo properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,138,148,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,148,50,14
+    LTEXT           "Mesh filename",IDC_STATIC,7,20,51,9
+    EDITTEXT        IDC_AMMO_MESH,59,20,92,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_AMMO_BROWSEMESH,151,20,37,10
+    LTEXT           "Particle effect ID",IDC_STATIC,7,34,54,9
+    EDITTEXT        IDC_AMMO_PEFFECT,66,34,84,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_AMMO_BROWSEPEFFECT,151,35,37,10
+    LTEXT           "Mass",IDC_STATIC,7,49,21,9
+    EDITTEXT        IDC_AMMO_MASS,37,49,36,12,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,79,50,13,9
+    EDITTEXT        IDC_AMMO_ID,97,49,36,12,ES_AUTOHSCROLL | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    CONTROL         "Collides with static objects",IDC_AMMO_COLLIDESSTATIC,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,115,
+                    86,62,19
+    CONTROL         "Affected by gravity",IDC_AMMO_GRAVITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,115,109,73,9
+    LTEXT           "Name",IDC_STATIC,37,7,21,9
+    EDITTEXT        IDC_AMMO_NAME,59,7,92,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Remove",IDC_AMMO_REMOVEMESH,151,7,37,10
+    PUSHBUTTON      "Remove",IDC_AMMO_REMOVEPEFFECT,151,47,37,10
+    LTEXT           "Controller ID",IDC_STATIC,19,64,42,9
+    EDITTEXT        IDC_AMMO_CONTROLLER,66,64,84,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "Browse",IDC_AMMO_BROWSECONTROLLER,151,59,37,10
+    PUSHBUTTON      "Remove",IDC_AMMO_REMOVECONTROLLER,151,72,37,10
+    GROUPBOX        "Damage type",IDC_STATIC,7,81,105,61
+    CONTROL         "Energy",IDC_AMMO_TYPE_ENERGY,"Button",
+                    BS_AUTORADIOBUTTON,15,94,86,10
+    CONTROL         "Plasma",IDC_AMMO_TYPE_PLASMA,"Button",
+                    BS_AUTORADIOBUTTON,15,103,86,10
+    CONTROL         "Projectile",IDC_AMMO_TYPE_PROJECTILE,"Button",
+                    BS_AUTORADIOBUTTON,15,112,86,10
+    CONTROL         "Stun",IDC_AMMO_TYPE_STUN,"Button",BS_AUTORADIOBUTTON,15,
+                    122,86,10
+    CONTROL         "Kinetic",IDC_AMMO_TYPE_KINETIC,"Button",
+                    BS_AUTORADIOBUTTON,15,131,86,10
+END
+
+IDD_PARTICLEEFFECT DIALOGEX 0, 0, 189, 251
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Particle effect"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Edit",IDC_PEFFECT_EDIT,61,206,40,14
+    PUSHBUTTON      "Cancel",IDC_PEFFECT_CANCEL,7,230,41,14
+    LISTBOX         IDC_PEFFECT_LIST,14,134,158,68,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save",IDC_PEFFECT_SAVE,70,230,38,14
+    PUSHBUTTON      "Add",IDC_PEFFECT_ADD,17,206,38,14
+    GROUPBOX        "Emitters",IDC_STATIC,7,122,175,104
+    LTEXT           "ID",IDC_STATIC,129,232,13,12
+    EDITTEXT        IDC_PEFFECT_ID,144,232,38,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Name",IDC_STATIC,7,7,25,10
+    EDITTEXT        IDC_PEFFECT_NAME,38,7,144,13,ES_AUTOHSCROLL
+    LTEXT           "Duration",IDC_STATIC,7,20,29,10
+    EDITTEXT        IDC_PEFFECT_DURATION,38,20,34,13,ES_AUTOHSCROLL
+    CONTROL         "Autokill effect after duration",IDC_PEFFECT_AUTOKILL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,23,107,8
+    PUSHBUTTON      "Remove",IDC_PEFFECT_REMOVE,125,206,40,14
+    GROUPBOX        "Effect type",IDC_STATIC,7,39,175,73
+    CONTROL         "Explosion",IDC_PE_TYPE_EXP,"Button",BS_AUTORADIOBUTTON,
+                    14,50,68,8
+    CONTROL         "Engine flame",IDC_PE_TYPE_ENGINE,"Button",
+                    BS_AUTORADIOBUTTON,14,60,68,8
+    CONTROL         "Environmental",IDC_PE_TYPE_ENV,"Button",
+                    BS_AUTORADIOBUTTON,14,72,68,8
+    CONTROL         "Special effect",IDC_PE_TYPE_SPECIAL,"Button",
+                    BS_AUTORADIOBUTTON,14,83,68,8
+    CONTROL         "Other",IDC_PE_TYPE_OTHER,"Button",BS_AUTORADIOBUTTON,14,
+                    95,35,8
+    CONTROL         "Ammo effect",IDC_PE_TYPE_AMMO,"Button",
+                    BS_AUTORADIOBUTTON,102,50,68,8
+    CONTROL         "Weapon effect",IDC_PE_TYPE_WEAPON,"Button",
+                    BS_AUTORADIOBUTTON,102,60,68,8
+    EDITTEXT        IDC_PE_OTHER_EFFECT,56,95,110,11,ES_AUTOHSCROLL
+END
+
+IDD_SCRIPT DIALOGEX 0, 0, 444, 402
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit script"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save",IDC_SCRIPT_SAVE,387,380,50,14
+    PUSHBUTTON      "Cancel",IDC_SCRIPT_CANCEL,7,380,50,14
+    LTEXT           "Script name",IDC_STATIC,7,7,41,9
+    EDITTEXT        IDC_SCRIPT_NAME,63,7,155,12,ES_AUTOHSCROLL
+    LTEXT           "Script filename",IDC_STATIC,7,19,50,9
+    EDITTEXT        IDC_SCRIPT_FILENAME,63,19,155,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "&Import from file",IDC_SCRIPT_IMPORT,223,7,73,11
+    LTEXT           "Script code",IDC_STATIC,7,36,37,8
+    LTEXT           "Output",IDC_STATIC,7,321,27,10
+    LISTBOX         IDC_SCRIPT_OUTPUT,7,332,430,46,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Parse and validate",IDC_SCRIPT_VALIDATE,185,380,74,14
+    PUSHBUTTON      "Save to file &as",IDC_SCRIPT_EXPORT,223,20,73,11
+    PUSHBUTTON      "&Save to file",IDC_SCRIPT_SAVEFILE,223,33,73,11,
+                    WS_DISABLED
+    EDITTEXT        IDC_SCRIPT_SCRIPT,7,47,322,271,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "View from file",IDC_SCRIPT_LOADTEXT,145,33,74,11
+    PUSHBUTTON      "View from database",IDC_SCRIPT_LOADBINARY,67,33,72,11
+    GROUPBOX        "Helpers",IDC_STATIC,335,7,102,321
+    LTEXT           "Selected ID / script",IDC_STATIC,342,18,67,9
+    EDITTEXT        IDC_SCRIPT_SELECTED,340,28,90,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Select dynamic object",IDC_TILE_SELECT_DYNAMIC,340,47,
+                    90,13
+    PUSHBUTTON      "Select static object",IDC_TILE_SELECT_STATIC,340,63,90,
+                    13
+    PUSHBUTTON      "Select enemy object",IDC_TILE_SELECT_ENEMY,340,79,90,13
+    PUSHBUTTON      "Select gadget",IDC_TILE_SELECT_GADGET,340,95,90,13
+    PUSHBUTTON      "Select ship patch",IDC_TILE_SELECT_PATCH,340,111,90,13
+    PUSHBUTTON      "Select component",IDC_TILE_SELECT_COMPONENT,340,128,90,
+                    13
+    PUSHBUTTON      "Select quest item",IDC_TILE_SELECT_QUESTITEM,339,145,90,
+                    13
+    PUSHBUTTON      "Select particle effect",IDC_TILE_SELECT_PEFFECT,339,162,
+                    90,13
+    PUSHBUTTON      "Select light effect",IDC_TILE_SELECT_LEFFECT,339,179,90,
+                    13
+    PUSHBUTTON      "Select sound",IDC_TILE_SELECT_SOUND,339,196,90,13
+    PUSHBUTTON      "Select global script",IDC_TILE_SELECT_GLOBAL_SCRIPT,340,
+                    213,90,13
+    PUSHBUTTON      "Select local script",IDC_TILE_SELECT_LOCAL_SCRIPT,339,
+                    230,90,13
+    PUSHBUTTON      "Select dialogue",IDC_TILE_SELECT_DIALOGUE,340,247,90,13
+    PUSHBUTTON      "Select terminal",IDC_TILE_SELECT_TERMINAL,340,276,90,13
+    PUSHBUTTON      "Select waypoint set",IDC_TILE_SELECT_ROUTE,339,292,90,
+                    13
+    CONTROL         "Autosave when closed",IDC_SCRIPT_CONFIRM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,141,322,165,8
+    PUSHBUTTON      "Select controller",IDC_TILE_SELECT_CONTROLLER,339,308,
+                    90,13
+    PUSHBUTTON      "Select assistant msg",IDC_TILE_SELECT_ASSISTANTMSG,340,
+                    262,90,13
+END
+
+IDD_SOUND DIALOGEX 0, 0, 214, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Sound properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,157,133,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,7,133,50,14
+    LTEXT           "Name",IDC_STATIC,17,7,23,9
+    LTEXT           "Filename",IDC_STATIC,7,19,34,9
+    EDITTEXT        IDC_SOUND_NAME,41,7,115,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SOUND_FILENAME,41,19,115,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_SOUND_BROWSE,157,19,50,12
+    GROUPBOX        "Sound type",IDC_STATIC,7,34,98,92
+    CONTROL         "Background music",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON,14,44,81,9
+    CONTROL         "Interface",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,14,54,
+                    81,9
+    CONTROL         "Explosion",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,14,64,
+                    81,9
+    CONTROL         "Player gadget",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,
+                    14,74,81,9
+    CONTROL         "Player misc",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,14,
+                    83,81,9
+    CONTROL         "Enemy gadget",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,14,
+                    92,81,9
+    CONTROL         "Enemy misc",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,14,
+                    102,81,9
+    CONTROL         "Environment misc",IDC_RADIO8,"Button",
+                    BS_AUTORADIOBUTTON,14,112,81,9
+    SCROLLBAR       IDC_SOUND_VOLUME,112,71,95,9
+    LTEXT           "Initial volume",IDC_STATIC,113,60,54,7
+    CONTROL         "Stream sound",IDC_SOUND_STREAM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,112,87,70,9
+    LTEXT           "ID",IDC_STATIC,113,103,9,8
+    EDITTEXT        IDC_SOUND_ID,125,102,39,11,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Listen",IDC_SOUND_LISTEN,157,35,50,12
+END
+
+IDD_EVENTACTION DIALOGEX 0, 0, 234, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set event action"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,177,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,52,50,14
+    LTEXT           "Particle effect",IDC_STATIC,7,7,47,9
+    EDITTEXT        IDC_AE_TXT1,55,7,100,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_AE_BROWSE1,155,7,35,12
+    PUSHBUTTON      "Remove",IDC_AE_REMOVE1,192,7,35,12
+    LTEXT           "Sound effect",IDC_STATIC,7,21,44,9,0,WS_EX_RIGHT
+    EDITTEXT        IDC_AE_TXT2,55,21,100,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_AE_BROWSE2,155,21,35,12
+    PUSHBUTTON      "Remove",IDC_AE_REMOVE2,192,21,35,12
+    LTEXT           "Script",IDC_STATIC,33,35,21,9
+    EDITTEXT        IDC_AE_TXT3,55,35,100,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_AE_BROWSE3,155,35,35,12
+    PUSHBUTTON      "Remove",IDC_AE_REMOVE3,192,35,35,12
+END
+
+IDD_TERMINALCOMMAND DIALOGEX 0, 0, 203, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Terminal command properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,146,132,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,132,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,34,8
+    EDITTEXT        IDC_TC_NAME,44,7,152,14,ES_AUTOHSCROLL
+    LTEXT           "Script",IDC_STATIC,7,25,34,8
+    EDITTEXT        IDC_TC_SCRIPT,44,25,98,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Dialogue",IDC_STATIC,7,42,34,8
+    EDITTEXT        IDC_TC_DIALOGUE,44,42,98,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_TC_BROWSE_SCRIPT,146,25,50,14
+    PUSHBUTTON      "Browse",IDC_TC_BROWSE_DIALOGUE,146,42,50,14
+    GROUPBOX        "Trigger type",IDC_STATIC,7,61,61,67
+    CONTROL         "Visible",IDC_TC_VISIBLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,132,47,10
+    CONTROL         "Enabled",IDC_TC_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,120,48,10
+    LTEXT           "Message",IDC_STATIC,77,60,48,9
+    EDITTEXT        IDC_TC_MESSAGE,76,73,120,45,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "Script",IDC_TC_TRIGGER_SCRIPT,"Button",
+                    BS_AUTORADIOBUTTON,14,72,46,7
+    CONTROL         "Message",IDC_TC_TRIGGER_MESSAGE,"Button",
+                    BS_AUTORADIOBUTTON,14,82,47,7
+    CONTROL         "Dialogue",IDC_TC_TRIGGER_DIALOGUE,"Button",
+                    BS_AUTORADIOBUTTON,14,92,45,6
+    CONTROL         "Shutdown",IDC_TC_TRIGGER_SHUTDOWN,"Button",
+                    BS_AUTORADIOBUTTON,14,102,49,8
+    CONTROL         "None",IDC_TC_TRIGGER_NONE,"Button",BS_AUTORADIOBUTTON,
+                    14,114,43,7
+END
+
+IDD_TERMINAL DIALOGEX 0, 0, 247, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Terminal properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,190,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,10,145,50,14
+    GROUPBOX        "Terminal interface commands",IDC_STATIC,127,7,113,135
+    PUSHBUTTON      "",IDC_TERMINAL_BUTTON1,135,23,95,14
+    PUSHBUTTON      "",IDC_TERMINAL_BUTTON2,135,42,95,14
+    PUSHBUTTON      "",IDC_TERMINAL_BUTTON3,135,60,95,14
+    PUSHBUTTON      "",IDC_TERMINAL_BUTTON4,135,79,95,14
+    PUSHBUTTON      "",IDC_TERMINAL_BUTTON5,135,100,95,14
+    PUSHBUTTON      "",IDC_TERMINAL_BUTTON6,135,119,95,14
+    LTEXT           "Name",IDC_STATIC,10,7,20,11
+    EDITTEXT        IDC_TERMINAL_NAME,27,7,93,12,ES_AUTOHSCROLL
+    CONTROL         "Functional by default",IDC_TERMINAL_FUNCTIONAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,81,149,80,10
+    PUSHBUTTON      "On close trigger",IDC_TERMINAL_ONCLOSE,62,20,59,13
+    LTEXT           "ID",IDC_STATIC,16,21,11,11
+    EDITTEXT        IDC_TERMINAL_ID,27,21,31,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "'Welcome' message",IDC_STATIC,10,34,62,11
+    EDITTEXT        IDC_TERMINAL_WELCOME,10,44,111,44,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Disfunctional message",IDC_STATIC,10,88,74,8
+    EDITTEXT        IDC_TERMINAL_DISFUNCTIONAL,10,98,112,45,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+IDD_LIGHTEFFECT DIALOGEX 0, 0, 228, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Light effect properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,171,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,122,50,14
+    GROUPBOX        "State 1",IDC_STATIC,7,7,106,70
+    PUSHBUTTON      "Set color",IDC_LE_SET_COLOR1,24,20,70,12
+    LTEXT           "Range",IDC_STATIC,14,37,39,10
+    LTEXT           "Min duration",IDC_STATIC,14,48,39,10
+    LTEXT           "Max duration",IDC_STATIC,14,60,43,10
+    EDITTEXT        IDC_LE_RANGE1,59,36,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LE_MIN_DURATION1,59,48,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LE_MAX_DURATION1,59,60,48,12,ES_AUTOHSCROLL
+    GROUPBOX        "State 2",IDC_STATIC,115,7,106,70
+    PUSHBUTTON      "Set color",IDC_LE_SET_COLOR2,132,20,70,12
+    LTEXT           "Range",IDC_STATIC,122,37,39,10
+    LTEXT           "Min duration",IDC_STATIC,122,48,39,10
+    LTEXT           "Max duration",IDC_STATIC,122,60,43,10
+    EDITTEXT        IDC_LE_RANGE2,167,36,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LE_MIN_DURATION2,167,48,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LE_MAX_DURATION2,167,60,48,12,ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC,7,80,25,8
+    EDITTEXT        IDC_LE_NAME,33,80,79,12,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,115,80,13,8
+    EDITTEXT        IDC_LE_ID,129,80,38,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Min transition time",IDC_STATIC,7,95,65,8
+    EDITTEXT        IDC_LE_MINTRANS,73,95,39,12,ES_AUTOHSCROLL
+    LTEXT           "Max transition time",IDC_STATIC,116,95,65,8
+    EDITTEXT        IDC_LE_MAXTRANS,182,95,39,12,ES_AUTOHSCROLL
+    CONTROL         "State 2 enabled",IDC_LE_STATE2_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,77,127,63,9
+    LTEXT           "Attenuation 1 coefficient",IDC_STATIC,7,106,81,8
+    EDITTEXT        IDC_LE_ATTCOEF,89,106,39,12,ES_AUTOHSCROLL
+END
+
+IDD_COMPONENT DIALOGEX 0, 0, 143, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Gadget component properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,148,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,148,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,26,9
+    EDITTEXT        IDC_ITEM_NAME,34,7,102,12,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,86,21,12,8
+    EDITTEXT        IDC_ITEM_ID,100,19,36,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Description",IDC_STATIC,7,21,39,9
+    EDITTEXT        IDC_ITEM_DESCRIPTION,7,31,129,52,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Icon",IDC_STATIC,7,86,15,9
+    EDITTEXT        IDC_ITEM_ICON,23,84,113,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_ITEM_BROWSE,61,97,36,11
+    PUSHBUTTON      "Remove",1366,100,97,36,11
+    LTEXT           "Source gadget",IDC_STATIC,7,116,49,9
+    EDITTEXT        IDC_COMPONENT_GADGET1,56,116,42,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_COMPONENT_BROWSEGADGET1,100,116,36,11
+    LTEXT           "Upgraded gadget",IDC_STATIC,7,127,49,17
+    EDITTEXT        IDC_COMPONENT_GADGET2,56,130,42,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_COMPONENT_BROWSEGADGET2,100,130,36,11
+END
+
+IDD_QUESTITEM DIALOGEX 0, 0, 143, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Quest item properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,116,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,116,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,26,9
+    EDITTEXT        IDC_ITEM_NAME,34,7,102,12,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,86,21,12,8
+    EDITTEXT        IDC_ITEM_ID,100,19,36,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Description",IDC_STATIC,7,21,39,9
+    EDITTEXT        IDC_ITEM_DESCRIPTION,7,31,129,52,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Icon",IDC_STATIC,7,86,15,9
+    EDITTEXT        IDC_ITEM_ICON,23,84,113,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_ITEM_BROWSE,61,97,36,11
+    PUSHBUTTON      "Remove",IDC_ITEM_REMOVE,100,97,36,11
+END
+
+IDD_SHIPPATCH DIALOGEX 0, 0, 143, 236
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ship patch properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,215,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,215,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,26,9
+    EDITTEXT        IDC_ITEM_NAME,34,7,102,12,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,86,21,12,8
+    EDITTEXT        IDC_ITEM_ID,100,19,36,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Description",IDC_STATIC,7,21,39,9
+    EDITTEXT        IDC_ITEM_DESCRIPTION,7,31,129,52,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Icon",IDC_STATIC,7,86,15,9
+    EDITTEXT        IDC_ITEM_ICON,23,84,113,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_ITEM_BROWSE,61,97,36,11
+    PUSHBUTTON      "Remove",IDC_ITEM_REMOVE,100,97,36,11
+    GROUPBOX        "Patch boosts",IDC_STATIC,7,111,129,67
+    CONTROL         "Health",IDC_PATCH_TYPE1,"Button",BS_AUTORADIOBUTTON,14,
+                    121,75,8
+    CONTROL         "Energy",IDC_PATCH_TYPE2,"Button",BS_AUTORADIOBUTTON,14,
+                    130,75,8
+    CONTROL         "Energy regeneration",IDC_PATCH_TYPE3,"Button",
+                    BS_AUTORADIOBUTTON,14,138,79,8
+    CONTROL         "Turn speed",IDC_PATCH_TYPE4,"Button",BS_AUTORADIOBUTTON,
+                    14,147,75,8
+    CONTROL         "Normal speed",IDC_PATCH_TYPE5,"Button",
+                    BS_AUTORADIOBUTTON,14,156,75,8
+    CONTROL         "Boosted speed",IDC_PATCH_TYPE6,"Button",
+                    BS_AUTORADIOBUTTON,14,164,75,8
+    LTEXT           "Amount of boost",IDC_STATIC,7,181,54,9
+    EDITTEXT        IDC_PATCH_PARAM1,67,179,69,12,ES_AUTOHSCROLL
+    LTEXT           "Boosted speed energy consumption",IDC_STATIC,7,191,68,
+                    17
+    EDITTEXT        IDC_PATCH_PARAM2,77,193,59,12,ES_AUTOHSCROLL
+END
+
+IDD_TREE_SELECTION DIALOGEX 0, 0, 189, 239
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Select",ID_SELECTION_SELECT,142,218,40,14
+    PUSHBUTTON      "Cancel",ID_SELECTION_CANCEL,7,218,41,14
+    PUSHBUTTON      "Save",ID_SELECTION_SAVE,54,218,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Add",ID_SELECTION_ADD,98,218,38,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,175,188
+    PUSHBUTTON      "Import",ID_SELECTION_IMPORT,54,199,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Export",ID_SELECTION_EXPORT,98,199,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Clone",ID_SELECTION_CLONE,142,199,40,14,NOT WS_VISIBLE
+END
+
+IDD_SELECTCOLOR DIALOGEX 0, 0, 108, 115
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select color"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,94,39,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,94,35,14
+    EDITTEXT        IDC_SC_A,29,7,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SC_R,29,23,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SC_G,29,39,72,12,ES_AUTOHSCROLL
+    LTEXT           "Alpha",IDC_4D_X,7,7,17,9
+    LTEXT           "Red",IDC_4D_Y,7,21,12,9
+    LTEXT           "Green",IDC_4D_Z,7,39,20,9
+    EDITTEXT        IDC_SC_B,29,56,72,12,ES_AUTOHSCROLL
+    LTEXT           "Blue",IDC_4D_W,7,56,14,9
+    PUSHBUTTON      "Pick color",IDC_SC_PICK,7,73,94,14
+END
+
+IDD_ASSISTANTMSG DIALOGEX 0, 0, 126, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit assistant message"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,69,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,140,50,14
+    EDITTEXT        IDC_AM_MSG,7,7,112,117,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "ID:",IDC_STATIC,71,127,11,8
+    EDITTEXT        IDC_AM_ID,87,125,31,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_NEWLEVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_SELECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_LEVEL_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_DYNAMIC_OBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_TILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_STATIC_OBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_VESSEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_SHIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_ENEMY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_DIALOGUE_LINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_DIALOGUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_GET_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_TRIGGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_PARTICLE_EMITTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+
+    IDD_GADGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 395
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 381
+    END
+
+    IDD_GET_VECTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 93
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_GET_VECTOR4D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 93
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_OBJECT_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_CAMPAIGN_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_CAMPAIGN_BLOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_AMMO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_PARTICLEEFFECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_SCRIPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 437
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDD_SOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_EVENTACTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_TERMINALCOMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_TERMINAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_LIGHTEFFECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_COMPONENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_QUESTITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_SHIPPATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_TREE_SELECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_SELECTCOLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_ASSISTANTMSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Finnish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

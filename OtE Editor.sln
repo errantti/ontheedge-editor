@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OtE Editor", "OtE Editor.vcxproj", "{0343F25B-6072-4F23-8DA8-2E253DE33C7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0343F25B-6072-4F23-8DA8-2E253DE33C7D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0343F25B-6072-4F23-8DA8-2E253DE33C7D}.Debug|Win32.Build.0 = Debug|Win32
+		{0343F25B-6072-4F23-8DA8-2E253DE33C7D}.Release|Win32.ActiveCfg = Release|Win32
+		{0343F25B-6072-4F23-8DA8-2E253DE33C7D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C5C87F4-B51A-42CB-A2AB-C4D491BC054C}
+	EndGlobalSection
+EndGlobal
